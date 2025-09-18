@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700" height="450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #2c3e50; }
+      .condition { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; font-weight: bold; }
+      .result { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; }
+      .example { font-family: Arial, sans-serif; font-size: 10px; fill: #7f8c8d; font-style: italic; }
+      .nutrient-rich { fill: #27ae60; }
+      .nutrient-poor { fill: #e74c3c; }
+      .specialized { fill: #8e44ad; }
+      .arrow { stroke: #2c3e50; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+      </marker>
+    </defs>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="700" height="450" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" class="title">微生物基因组进化方向与环境适应</text>
+  
+  <!-- Ancestral genome -->
+  <ellipse cx="350" cy="80" rx="60" ry="25" fill="#34495e"/>
+  <text x="350" y="80" text-anchor="middle" class="condition">祖先基因组</text>
+  <text x="350" y="95" text-anchor="middle" class="result">(基础代谢)</text>
+  
+  <!-- Environmental pressures -->
+  <rect x="50" y="150" width="120" height="60" rx="10" class="nutrient-rich"/>
+  <text x="110" y="170" text-anchor="middle" class="condition">营养丰富</text>
+  <text x="110" y="185" text-anchor="middle" class="result">环境</text>
+  <text x="110" y="200" text-anchor="middle" class="example">如土壤</text>
+  
+  <rect x="290" y="150" width="120" height="60" rx="10" class="nutrient-poor"/>
+  <text x="350" y="170" text-anchor="middle" class="condition">营养贫乏</text>
+  <text x="350" y="185" text-anchor="middle" class="result">环境</text>
+  <text x="350" y="200" text-anchor="middle" class="example">如海洋</text>
+  
+  <rect x="530" y="150" width="120" height="60" rx="10" class="specialized"/>
+  <text x="590" y="170" text-anchor="middle" class="condition">专化生境</text>
+  <text x="590" y="185" text-anchor="middle" class="result">环境</text>
+  <text x="590" y="200" text-anchor="middle" class="example">如宿主内</text>
+  
+  <!-- Evolution directions -->
+  <rect x="50" y="280" width="120" height="50" rx="10" fill="#2ecc71"/>
+  <text x="110" y="300" text-anchor="middle" class="condition">基因获得</text>
+  <text x="110" y="315" text-anchor="middle" class="result">↓ HGT</text>
+  
+  <rect x="290" y="280" width="120" height="50" rx="10" fill="#c0392b"/>
+  <text x="350" y="300" text-anchor="middle" class="condition">基因缺失</text>
+  <text x="350" y="315" text-anchor="middle" class="result">↓ 选择压力</text>
+  
+  <rect x="530" y="280" width="120" height="50" rx="10" fill="#7d3c98"/>
+  <text x="590" y="300" text-anchor="middle" class="condition">基因组缩减</text>
+  <text x="590" y="315" text-anchor="middle" class="result">↓ 遗传漂变</text>
+  
+  <!-- Final outcomes -->
+  <rect x="50" y="370" width="120" height="50" rx="10" fill="#16a085"/>
+  <text x="110" y="390" text-anchor="middle" class="condition">代谢多样化</text>
+  <text x="110" y="405" text-anchor="middle" class="example">大基因组</text>
+  
+  <rect x="290" y="370" width="120" height="50" rx="10" fill="#a93226"/>
+  <text x="350" y="390" text-anchor="middle" class="condition">精简基因组</text>
+  <text x="350" y="405" text-anchor="middle" class="example">高效代谢</text>
+  
+  <rect x="530" y="370" width="120" height="50" rx="10" fill="#6c3483"/>
+  <text x="590" y="390" text-anchor="middle" class="condition">共生适应</text>
+  <text x="590" y="405" text-anchor="middle" class="example">极小基因组</text>
+  
+  <!-- Arrows -->
+  <line x1="320" y1="90" x2="110" y2="150" class="arrow"/>
+  <line x1="350" y1="105" x2="350" y2="150" class="arrow"/>
+  <line x1="380" y1="90" x2="590" y2="150" class="arrow"/>
+  
+  <line x1="110" y1="210" x2="110" y2="280" class="arrow"/>
+  <line x1="350" y1="210" x2="350" y2="280" class="arrow"/>
+  <line x1="590" y1="210" x2="590" y2="280" class="arrow"/>
+  
+  <line x1="110" y1="330" x2="110" y2="370" class="arrow"/>
+  <line x1="350" y1="330" x2="350" y2="370" class="arrow"/>
+  <line x1="590" y1="330" x2="590" y2="370" class="arrow"/>
+</svg>

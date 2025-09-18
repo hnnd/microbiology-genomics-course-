@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="650" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #2c3e50; }
+      .mechanism { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; font-weight: bold; }
+      .element { font-family: Arial, sans-serif; font-size: 11px; fill: #ffffff; }
+      .example { font-family: Arial, sans-serif; font-size: 10px; fill: #7f8c8d; font-style: italic; }
+      .nonpathogenic { fill: #3498db; }
+      .pathogenic { fill: #e74c3c; }
+      .plasmid { fill: #f39c12; }
+      .phage { fill: #9b59b6; }
+      .island { fill: #27ae60; }
+      .arrow { stroke: #2c3e50; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+      </marker>
+    </defs>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="650" height="400" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="325" y="30" text-anchor="middle" class="title">微生物毒力基因获得机制</text>
+  
+  <!-- Non-pathogenic bacteria -->
+  <ellipse cx="120" cy="80" rx="70" ry="30" class="nonpathogenic"/>
+  <text x="120" y="75" text-anchor="middle" class="mechanism">非病原菌</text>
+  <text x="120" y="90" text-anchor="middle" class="element">(正常菌群)</text>
+  
+  <!-- Acquisition mechanisms -->
+  <rect x="60" y="160" width="100" height="50" rx="10" class="plasmid"/>
+  <text x="110" y="180" text-anchor="middle" class="mechanism">质粒转移</text>
+  <text x="110" y="195" text-anchor="middle" class="element">抗性质粒</text>
+  
+  <rect x="200" y="160" width="100" height="50" rx="10" class="phage"/>
+  <text x="250" y="180" text-anchor="middle" class="mechanism">噬菌体转导</text>
+  <text x="250" y="195" text-anchor="middle" class="element">毒素基因</text>
+  
+  <rect x="340" y="160" width="100" height="50" rx="10" class="island"/>
+  <text x="390" y="180" text-anchor="middle" class="mechanism">基因组岛</text>
+  <text x="390" y="195" text-anchor="middle" class="element">病原性岛</text>
+  
+  <!-- Pathogenic bacteria -->
+  <ellipse cx="530" cy="80" rx="70" ry="30" class="pathogenic"/>
+  <text x="530" y="75" text-anchor="middle" class="mechanism">机会致病菌</text>
+  <text x="530" y="90" text-anchor="middle" class="element">(获得毒力)</text>
+  
+  <!-- Mechanism details -->
+  <rect x="50" y="260" width="120" height="80" rx="5" fill="#f8f9fa" stroke="#f39c12" stroke-width="2"/>
+  <text x="110" y="280" text-anchor="middle" class="label">质粒特征</text>
+  <text x="60" y="295" class="example">• 可移动性</text>
+  <text x="60" y="310" class="example">• 抗生素抗性</text>
+  <text x="60" y="325" class="example">• 金属抗性</text>
+  
+  <rect x="190" y="260" width="120" height="80" rx="5" fill="#f8f9fa" stroke="#9b59b6" stroke-width="2"/>
+  <text x="250" y="280" text-anchor="middle" class="label">噬菌体特征</text>
+  <text x="200" y="295" class="example">• 毒素基因</text>
+  <text x="200" y="310" class="example">• 溶原性整合</text>
+  <text x="200" y="325" class="example">• 水平传播</text>
+  
+  <rect x="330" y="260" width="120" height="80" rx="5" fill="#f8f9fa" stroke="#27ae60" stroke-width="2"/>
+  <text x="390" y="280" text-anchor="middle" class="label">基因组岛特征</text>
+  <text x="340" y="295" class="example">• 10-200 kb</text>
+  <text x="340" y="310" class="example">• GC含量异常</text>
+  <text x="340" y="325" class="example">• tRNA整合位点</text>
+  
+  <!-- Arrows showing acquisition -->
+  <line x1="190" y1="80" x2="460" y2="80" class="arrow"/>
+  
+  <!-- Arrows from mechanisms -->
+  <line x1="110" y1="130" x2="110" y2="160" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="250" y1="130" x2="250" y2="160" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="390" y1="130" x2="390" y2="160" stroke="#2c3e50" stroke-width="2"/>
+  
+  <!-- Convergence arrows -->
+  <line x1="110" y1="210" x2="480" y2="70" class="arrow"/>
+  <line x1="250" y1="210" x2="500" y2="70" class="arrow"/>
+  <line x1="390" y1="210" x2="520" y2="70" class="arrow"/>
+  
+  <!-- Examples -->
+  <text x="480" y="360" class="example">典型例子：</text>
+  <text x="480" y="375" class="example">E. coli O157:H7 (Shiga毒素)</text>
+  <text x="480" y="390" class="example">V. cholerae (霍乱毒素)</text>
+</svg>

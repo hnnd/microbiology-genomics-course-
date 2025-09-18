@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #34495e; }
+      .percentage { font-family: Arial, sans-serif; font-size: 12px; fill: #ffffff; font-weight: bold; }
+      .free-living { fill: #3498db; }
+      .symbiotic { fill: #e74c3c; }
+      .pathogenic { fill: #f39c12; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" class="title">微生物基因组编码密度分布</text>
+  
+  <!-- Central node -->
+  <circle cx="300" cy="120" r="40" fill="#2c3e50"/>
+  <text x="300" y="115" text-anchor="middle" class="label" fill="white">微生物</text>
+  <text x="300" y="130" text-anchor="middle" class="label" fill="white">基因组</text>
+  
+  <!-- Free-living bacteria -->
+  <rect x="80" y="200" width="120" height="60" rx="10" class="free-living"/>
+  <text x="140" y="220" text-anchor="middle" class="label" fill="white">自由生活菌</text>
+  <text x="140" y="240" text-anchor="middle" class="percentage">85-95%</text>
+  <text x="140" y="255" text-anchor="middle" class="percentage">编码区</text>
+  
+  <!-- Symbiotic bacteria -->
+  <rect x="240" y="200" width="120" height="60" rx="10" class="symbiotic"/>
+  <text x="300" y="220" text-anchor="middle" class="label" fill="white">共生菌</text>
+  <text x="300" y="240" text-anchor="middle" class="percentage">70-85%</text>
+  <text x="300" y="255" text-anchor="middle" class="percentage">编码区</text>
+  
+  <!-- Pathogenic bacteria -->
+  <rect x="400" y="200" width="120" height="60" rx="10" class="pathogenic"/>
+  <text x="460" y="220" text-anchor="middle" class="label" fill="white">病原菌</text>
+  <text x="460" y="240" text-anchor="middle" class="percentage">80-90%</text>
+  <text x="460" y="255" text-anchor="middle" class="percentage">编码区</text>
+  
+  <!-- Connecting lines -->
+  <line x1="270" y1="140" x2="140" y2="200" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="300" y1="160" x2="300" y2="200" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="330" y1="140" x2="460" y2="200" stroke="#2c3e50" stroke-width="2"/>
+  
+  <!-- Legend -->
+  <text x="50" y="320" class="label">特征说明：</text>
+  <rect x="50" y="330" width="15" height="15" class="free-living"/>
+  <text x="75" y="342" class="label">自由生活菌：高编码效率，代谢多样性</text>
+  <rect x="50" y="350" width="15" height="15" class="symbiotic"/>
+  <text x="75" y="362" class="label">共生菌：基因组缩减，代谢依赖宿主</text>
+  <rect x="50" y="370" width="15" height="15" class="pathogenic"/>
+  <text x="75" y="382" class="label">病原菌：中等编码密度，毒力基因</text>
+</svg>

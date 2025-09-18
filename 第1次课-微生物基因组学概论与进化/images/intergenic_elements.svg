@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="650" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .category { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #ffffff; }
+      .element { font-family: Arial, sans-serif; font-size: 13px; fill: #ffffff; }
+      .description { font-family: Arial, sans-serif; font-size: 11px; fill: #7f8c8d; }
+      .regulatory { fill: #3498db; }
+      .rna { fill: #e74c3c; }
+      .repetitive { fill: #f39c12; }
+      .other { fill: #9b59b6; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="650" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="325" y="30" text-anchor="middle" class="title">基因间区功能元件分类</text>
+  
+  <!-- Central node -->
+  <ellipse cx="325" cy="100" rx="80" ry="30" fill="#2c3e50"/>
+  <text x="325" y="95" text-anchor="middle" class="category">基因间区</text>
+  <text x="325" y="110" text-anchor="middle" class="category">功能元件</text>
+  
+  <!-- Regulatory sequences -->
+  <rect x="50" y="180" width="140" height="80" rx="10" class="regulatory"/>
+  <text x="120" y="200" text-anchor="middle" class="category">调控序列</text>
+  <text x="70" y="220" class="element">• 启动子</text>
+  <text x="70" y="235" class="element">• 终止子</text>
+  <text x="70" y="250" class="element">• 操作子</text>
+  
+  <!-- Small RNA genes -->
+  <rect x="230" y="180" width="140" height="80" rx="10" class="rna"/>
+  <text x="300" y="200" text-anchor="middle" class="category">小RNA基因</text>
+  <text x="250" y="220" class="element">• 反义RNA</text>
+  <text x="250" y="235" class="element">• 核糖开关</text>
+  <text x="250" y="250" class="element">• 调控RNA</text>
+  
+  <!-- Repetitive sequences -->
+  <rect x="410" y="180" width="140" height="80" rx="10" class="repetitive"/>
+  <text x="480" y="200" text-anchor="middle" class="category">重复序列</text>
+  <text x="430" y="220" class="element">• 转座子</text>
+  <text x="430" y="235" class="element">• 插入序列</text>
+  <text x="430" y="250" class="element">• 串联重复</text>
+  
+  <!-- Other elements -->
+  <rect x="140" y="320" width="140" height="80" rx="10" class="other"/>
+  <text x="210" y="340" text-anchor="middle" class="category">其他元件</text>
+  <text x="160" y="360" class="element">• CRISPR阵列</text>
+  <text x="160" y="375" class="element">• 信号序列</text>
+  <text x="160" y="390" class="element">• 整合位点</text>
+  
+  <!-- Additional category -->
+  <rect x="320" y="320" width="140" height="80" rx="10" class="other"/>
+  <text x="390" y="340" text-anchor="middle" class="category">结构元件</text>
+  <text x="340" y="360" class="element">• 回文序列</text>
+  <text x="340" y="375" class="element">• 茎环结构</text>
+  <text x="340" y="390" class="element">• 结合位点</text>
+  
+  <!-- Connecting lines -->
+  <line x1="280" y1="120" x2="120" y2="180" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="325" y1="130" x2="300" y2="180" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="370" y1="120" x2="480" y2="180" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="300" y1="140" x2="210" y2="320" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="350" y1="140" x2="390" y2="320" stroke="#2c3e50" stroke-width="2"/>
+  
+  <!-- Statistics box -->
+  <rect x="50" y="430" width="550" height="50" rx="5" fill="#ecf0f1" stroke="#bdc3c7"/>
+  <text x="60" y="450" class="description">统计特征：</text>
+  <text x="60" y="465" class="description">• 基因间区长度：中位数50-100 bp  • 调控元件密度：每kb约2-5个  • 重复序列比例：0.5-5%</text>
+</svg>
