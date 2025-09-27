@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #1f2937; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #374151; }
+      .gene { fill: #3b82f6; stroke: #1e40af; stroke-width: 2; }
+      .spacer { fill: #e5e7eb; stroke: #9ca3af; stroke-width: 1; }
+      .arrow { fill: #374151; }
+    </style>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="30" text-anchor="middle" class="title">rRNA操纵子结构与组装挑战</text>
+  
+  <!-- 单个操纵子结构 -->
+  <text x="50" y="80" class="label">单个rRNA操纵子：</text>
+  
+  <!-- 16S rRNA -->
+  <rect x="50" y="100" width="120" height="30" class="gene" rx="5"/>
+  <text x="110" y="120" text-anchor="middle" class="label" fill="white">16S rRNA</text>
+  
+  <!-- 间隔区 -->
+  <rect x="170" y="100" width="40" height="30" class="spacer" rx="5"/>
+  <text x="190" y="120" text-anchor="middle" class="label">ITS</text>
+  
+  <!-- 23S rRNA -->
+  <rect x="210" y="100" width="120" height="30" class="gene" rx="5"/>
+  <text x="270" y="120" text-anchor="middle" class="label" fill="white">23S rRNA</text>
+  
+  <!-- 间隔区 -->
+  <rect x="330" y="100" width="40" height="30" class="spacer" rx="5"/>
+  <text x="350" y="120" text-anchor="middle" class="label">ITS</text>
+  
+  <!-- 5S rRNA -->
+  <rect x="370" y="100" width="80" height="30" class="gene" rx="5"/>
+  <text x="410" y="120" text-anchor="middle" class="label" fill="white">5S rRNA</text>
+  
+  <!-- tRNA基因 -->
+  <rect x="450" y="100" width="60" height="30" class="gene" rx="5"/>
+  <text x="480" y="120" text-anchor="middle" class="label" fill="white">tRNA</text>
+  
+  <!-- 多拷贝操纵子 -->
+  <text x="50" y="200" class="label">多拷贝操纵子分布：</text>
+  
+  <!-- 操纵子1 -->
+  <rect x="50" y="220" width="100" height="25" class="gene" rx="3"/>
+  <text x="100" y="237" text-anchor="middle" class="label" fill="white">操纵子1</text>
+  
+  <!-- 箭头 -->
+  <polygon points="160,232 180,225 180,239" class="arrow"/>
+  
+  <!-- 操纵子2 -->
+  <rect x="190" y="220" width="100" height="25" class="gene" rx="3"/>
+  <text x="240" y="237" text-anchor="middle" class="label" fill="white">操纵子2</text>
+  
+  <!-- 箭头 -->
+  <polygon points="300,232 320,225 320,239" class="arrow"/>
+  
+  <!-- 操纵子3 -->
+  <rect x="330" y="220" width="100" height="25" class="gene" rx="3"/>
+  <text x="380" y="237" text-anchor="middle" class="label" fill="white">操纵子3</text>
+  
+  <!-- 省略号 -->
+  <text x="450" y="237" class="label">...</text>
+  
+  <!-- 操纵子n -->
+  <rect x="480" y="220" width="100" height="25" class="gene" rx="3"/>
+  <text x="530" y="237" text-anchor="middle" class="label" fill="white">操纵子n</text>
+  
+  <!-- 组装问题说明 -->
+  <text x="50" y="300" class="label">组装挑战：</text>
+  <text x="50" y="325" class="label">• 高度保守序列（99%以上相似性）</text>
+  <text x="50" y="345" class="label">• 多拷贝存在（通常3-7个拷贝）</text>
+  <text x="50" y="365" class="label">• 导致contig断裂和组装歧义</text>
+</svg>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #2c3e50; }
+      .label { font-family: Arial, sans-serif; font-size: 11px; fill: #2c3e50; }
+      .input { fill: #e1f5fe; stroke: #0277bd; stroke-width: 2; rx: 8; }
+      .process { fill: #fff3e0; stroke: #ef6c00; stroke-width: 2; rx: 8; }
+      .analysis { fill: #f3e5f5; stroke: #7b1fa2; stroke-width: 2; rx: 8; }
+      .result { fill: #c8e6c9; stroke: #388e3c; stroke-width: 2; rx: 8; }
+      .arrow { stroke: #424242; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">泛基因组分析流程</text>
+  
+  <!-- Input data -->
+  <rect x="50" y="60" width="100" height="50" class="input"/>
+  <text x="100" y="80" text-anchor="middle" class="label">原始数据</text>
+  <text x="100" y="95" text-anchor="middle" class="label">GenBank文件</text>
+  
+  <!-- Prokka annotation -->
+  <rect x="200" y="60" width="100" height="50" class="process"/>
+  <text x="250" y="80" text-anchor="middle" class="label">数据预处理</text>
+  <text x="250" y="95" text-anchor="middle" class="label">Prokka注释</text>
+  
+  <!-- GFF generation -->
+  <rect x="350" y="60" width="100" height="50" class="process"/>
+  <text x="400" y="80" text-anchor="middle" class="label">GFF文件生成</text>
+  <text x="400" y="95" text-anchor="middle" class="label">基因预测</text>
+  
+  <!-- Quality control -->
+  <rect x="200" y="140" width="100" height="50" class="analysis"/>
+  <text x="250" y="160" text-anchor="middle" class="label">质量控制</text>
+  <text x="250" y="175" text-anchor="middle" class="label">格式检查</text>
+  
+  <!-- Roary analysis -->
+  <rect x="350" y="140" width="100" height="50" class="analysis"/>
+  <text x="400" y="160" text-anchor="middle" class="label">主要分析</text>
+  <text x="400" y="175" text-anchor="middle" class="label">Roary泛基因组</text>
+  
+  <!-- Core genome extraction -->
+  <rect x="500" y="80" width="120" height="50" class="result"/>
+  <text x="560" y="100" text-anchor="middle" class="label">核心基因组提取</text>
+  <text x="560" y="115" text-anchor="middle" class="label">保守基因识别</text>
+  
+  <!-- Accessory genome analysis -->
+  <rect x="500" y="140" width="120" height="50" class="result"/>
+  <text x="560" y="160" text-anchor="middle" class="label">辅助基因组分析</text>
+  <text x="560" y="175" text-anchor="middle" class="label">可变基因功能</text>
+  
+  <!-- Phylogenetic tree -->
+  <rect x="650" y="80" width="120" height="50" class="result"/>
+  <text x="710" y="100" text-anchor="middle" class="label">系统发育树构建</text>
+  <text x="710" y="115" text-anchor="middle" class="label">进化关系分析</text>
+  
+  <!-- Functional classification -->
+  <rect x="650" y="140" width="120" height="50" class="result"/>
+  <text x="710" y="160" text-anchor="middle" class="label">功能分类分析</text>
+  <text x="710" y="175" text-anchor="middle" class="label">COG/KEGG注释</text>
+  
+  <!-- Visualization -->
+  <rect x="500" y="220" width="120" height="50" class="result"/>
+  <text x="560" y="240" text-anchor="middle" class="label">结果可视化</text>
+  <text x="560" y="255" text-anchor="middle" class="label">图表生成</text>
+  
+  <!-- Final results -->
+  <rect x="650" y="220" width="120" height="50" class="result"/>
+  <text x="710" y="240" text-anchor="middle" class="label">综合报告</text>
+  <text x="710" y="255" text-anchor="middle" class="label">生物学解释</text>
+  
+  <!-- Arrows -->
+  <line x1="150" y1="85" x2="190" y2="85" class="arrow"/>
+  <line x1="300" y1="85" x2="340" y2="85" class="arrow"/>
+  <line x1="250" y1="110" x2="250" y2="130" class="arrow"/>
+  <line x1="300" y1="165" x2="340" y2="165" class="arrow"/>
+  
+  <line x1="450" y1="120" x2="490" y2="105" class="arrow"/>
+  <line x1="450" y1="150" x2="490" y2="165" class="arrow"/>
+  
+  <line x1="620" y1="105" x2="640" y2="105" class="arrow"/>
+  <line x1="620" y1="165" x2="640" y2="165" class="arrow"/>
+  
+  <line x1="560" y1="190" x2="560" y2="210" class="arrow"/>
+  <line x1="710" y1="190" x2="710" y2="210" class="arrow"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="300" width="720" height="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="4"/>
+  <text x="60" y="320" class="label" font-weight="bold">流程说明：</text>
+  <text x="60" y="335" class="label">1. 数据预处理：使用Prokka对GenBank文件进行基因注释，生成标准GFF格式文件</text>
+  <text x="60" y="350" class="label">2. 泛基因组分析：使用Roary识别核心基因组、辅助基因组和独特基因组</text>
+  <text x="60" y="365" class="label">3. 下游分析：构建系统发育树、功能分类分析和结果可视化</text>
+</svg>

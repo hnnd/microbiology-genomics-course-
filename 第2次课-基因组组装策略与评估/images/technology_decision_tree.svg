@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #1f2937; }
+      .label { font-family: Arial, sans-serif; font-size: 12px; fill: #374151; }
+      .decision { fill: #dbeafe; stroke: #3b82f6; stroke-width: 2; }
+      .result { fill: #dcfce7; stroke: #16a34a; stroke-width: 2; }
+      .arrow { fill: #374151; }
+      .line { stroke: #374151; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="30" text-anchor="middle" class="title">基因组组装技术选择决策树</text>
+  
+  <!-- 起始节点 -->
+  <ellipse cx="400" cy="80" rx="60" ry="25" class="decision"/>
+  <text x="400" y="85" text-anchor="middle" class="label">组装需求</text>
+  
+  <!-- 第一层决策：预算 -->
+  <ellipse cx="200" cy="160" rx="60" ry="25" class="decision"/>
+  <text x="200" y="165" text-anchor="middle" class="label">预算充足?</text>
+  
+  <ellipse cx="600" cy="160" rx="60" ry="25" class="decision"/>
+  <text x="600" y="165" text-anchor="middle" class="label">预算有限?</text>
+  
+  <!-- 连接线 -->
+  <line x1="360" y1="100" x2="240" y2="140" class="line"/>
+  <line x1="440" y1="100" x2="560" y2="140" class="line"/>
+  
+  <!-- 标签 -->
+  <text x="280" y="125" class="label">是</text>
+  <text x="520" y="125" class="label">否</text>
+  
+  <!-- 第二层决策：时间要求 -->
+  <ellipse cx="100" cy="240" rx="60" ry="25" class="decision"/>
+  <text x="100" y="245" text-anchor="middle" class="label">时间紧急?</text>
+  
+  <ellipse cx="300" cy="240" rx="60" ry="25" class="decision"/>
+  <text x="300" y="245" text-anchor="middle" class="label">完整性要求?</text>
+  
+  <!-- 预算有限的结果 -->
+  <rect x="540" y="220" width="120" height="40" class="result" rx="5"/>
+  <text x="600" y="245" text-anchor="middle" class="label">Illumina组装</text>
+  
+  <!-- 连接线 -->
+  <line x1="160" y1="180" x2="140" y2="220" class="line"/>
+  <line x1="240" y1="180" x2="260" y2="220" class="line"/>
+  <line x1="600" y1="185" x2="600" y2="220" class="line"/>
+  
+  <!-- 标签 -->
+  <text x="125" y="205" class="label">是</text>
+  <text x="275" y="205" class="label">否</text>
+  
+  <!-- 第三层结果 -->
+  <!-- 时间紧急 -->
+  <rect x="40" y="320" width="120" height="40" class="result" rx="5"/>
+  <text x="100" y="345" text-anchor="middle" class="label">Nanopore组装</text>
+  
+  <!-- 完整性要求高 -->
+  <rect x="200" y="320" width="120" height="40" class="result" rx="5"/>
+  <text x="260" y="345" text-anchor="middle" class="label">混合组装</text>
+  
+  <!-- 完整性要求中等 -->
+  <rect x="360" y="320" width="120" height="40" class="result" rx="5"/>
+  <text x="420" y="345" text-anchor="middle" class="label">PacBio组装</text>
+  
+  <!-- 连接线 -->
+  <line x1="100" y1="265" x2="100" y2="320" class="line"/>
+  <line x1="260" y1="260" x2="260" y2="320" class="line"/>
+  <line x1="340" y1="260" x2="420" y2="320" class="line"/>
+  
+  <!-- 标签 -->
+  <text x="80" y="295" class="label">是</text>
+  <text x="240" y="295" class="label">高</text>
+  <text x="385" y="295" class="label">中等</text>
+  
+  <!-- 技术特点说明 -->
+  <text x="50" y="420" class="label">技术特点对比：</text>
+  
+  <!-- 表格头 -->
+  <text x="50" y="450" class="label" style="font-weight: bold;">技术</text>
+  <text x="150" y="450" class="label" style="font-weight: bold;">成本</text>
+  <text x="200" y="450" class="label" style="font-weight: bold;">时间</text>
+  <text x="250" y="450" class="label" style="font-weight: bold;">完整性</text>
+  <text x="320" y="450" class="label" style="font-weight: bold;">准确性</text>
+  <text x="390" y="450" class="label" style="font-weight: bold;">适用场景</text>
+  
+  <!-- 表格内容 -->
+  <text x="50" y="470" class="label">Illumina</text>
+  <text x="150" y="470" class="label">低</text>
+  <text x="200" y="470" class="label">短</text>
+  <text x="250" y="470" class="label">中等</text>
+  <text x="320" y="470" class="label">高</text>
+  <text x="390" y="470" class="label">常规分析</text>
+  
+  <text x="50" y="490" class="label">PacBio</text>
+  <text x="150" y="490" class="label">高</text>
+  <text x="200" y="490" class="label">中等</text>
+  <text x="250" y="490" class="label">高</text>
+  <text x="320" y="490" class="label">高</text>
+  <text x="390" y="490" class="label">完成图</text>
+  
+  <text x="50" y="510" class="label">Nanopore</text>
+  <text x="150" y="510" class="label">中等</text>
+  <text x="200" y="510" class="label">短</text>
+  <text x="250" y="510" class="label">高</text>
+  <text x="320" y="510" class="label">中等</text>
+  <text x="390" y="510" class="label">快速组装</text>
+  
+  <text x="50" y="530" class="label">混合组装</text>
+  <text x="150" y="530" class="label">中等</text>
+  <text x="200" y="530" class="label">中等</text>
+  <text x="250" y="530" class="label">很高</text>
+  <text x="320" y="530" class="label">很高</text>
+  <text x="390" y="530" class="label">高质量需求</text>
+</svg>

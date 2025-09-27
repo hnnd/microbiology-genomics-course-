@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="600" height="500" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- 标题 -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#212529">通量平衡分析(FBA)工作流程</text>
+  
+  <!-- 步骤1: 代谢网络重建 -->
+  <rect x="50" y="60" width="150" height="60" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="10"/>
+  <text x="125" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1976d2">步骤1</text>
+  <text x="125" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1976d2">代谢网络重建</text>
+  
+  <!-- 基因组注释 -->
+  <ellipse cx="80" cy="150" rx="25" ry="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="80" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">基因组注释</text>
+  
+  <!-- 反应数据库 -->
+  <ellipse cx="170" cy="150" rx="25" ry="15" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="170" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c">反应数据库</text>
+  
+  <!-- 步骤2: 化学计量矩阵构建 -->
+  <rect x="250" y="60" width="150" height="60" fill="#e8f5e8" stroke="#388e3c" stroke-width="2" rx="10"/>
+  <text x="325" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#388e3c">步骤2</text>
+  <text x="325" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#388e3c">化学计量矩阵</text>
+  
+  <!-- 矩阵表示 -->
+  <rect x="280" y="140" width="90" height="50" fill="#ffffff" stroke="#666" stroke-width="1"/>
+  <text x="325" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">S · v = 0</text>
+  <text x="290" y="170" font-family="Arial, sans-serif" font-size="8" fill="#666">m个代谢物</text>
+  <text x="290" y="180" font-family="Arial, sans-serif" font-size="8" fill="#666">n个反应</text>
+  
+  <!-- 步骤3: 约束条件设定 -->
+  <rect x="450" y="60" width="120" height="60" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="10"/>
+  <text x="510" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f57c00">步骤3</text>
+  <text x="510" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#f57c00">约束条件</text>
+  
+  <!-- 约束类型 -->
+  <rect x="460" y="140" width="100" height="40" fill="#ffffff" stroke="#666" stroke-width="1"/>
+  <text x="510" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">v_min ≤ v ≤ v_max</text>
+  <text x="510" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#666">热力学约束</text>
+  
+  <!-- 步骤4: 目标函数定义 -->
+  <rect x="50" y="220" width="150" height="60" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="10"/>
+  <text x="125" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2185b">步骤4</text>
+  <text x="125" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c2185b">目标函数定义</text>
+  
+  <!-- 目标函数选项 -->
+  <rect x="60" y="300" width="130" height="50" fill="#ffffff" stroke="#666" stroke-width="1"/>
+  <text x="125" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">max c^T · v</text>
+  <text x="70" y="330" font-family="Arial, sans-serif" font-size="8" fill="#666">• 最大化生物量</text>
+  <text x="70" y="340" font-family="Arial, sans-serif" font-size="8" fill="#666">• 最小化ATP消耗</text>
+  
+  <!-- 步骤5: 线性规划求解 -->
+  <rect x="250" y="220" width="150" height="60" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="10"/>
+  <text x="325" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7b1fa2">步骤5</text>
+  <text x="325" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7b1fa2">线性规划求解</text>
+  
+  <!-- 求解器 -->
+  <ellipse cx="280" cy="320" rx="30" ry="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="280" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">CPLEX</text>
+  
+  <ellipse cx="325" cy="320" rx="30" ry="15" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="325" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c">Gurobi</text>
+  
+  <ellipse cx="370" cy="320" rx="30" ry="15" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="370" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#1976d2">GLPK</text>
+  
+  <!-- 步骤6: 结果分析 -->
+  <rect x="450" y="220" width="120" height="60" fill="#e0f2f1" stroke="#00695c" stroke-width="2" rx="10"/>
+  <text x="510" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#00695c">步骤6</text>
+  <text x="510" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#00695c">结果分析</text>
+  
+  <!-- 分析内容 -->
+  <rect x="460" y="300" width="100" height="50" fill="#ffffff" stroke="#666" stroke-width="1"/>
+  <text x="470" y="315" font-family="Arial, sans-serif" font-size="8" fill="#666">• 通量分布</text>
+  <text x="470" y="325" font-family="Arial, sans-serif" font-size="8" fill="#666">• 生长速率</text>
+  <text x="470" y="335" font-family="Arial, sans-serif" font-size="8" fill="#666">• 瓶颈反应</text>
+  <text x="470" y="345" font-family="Arial, sans-serif" font-size="8" fill="#666">• 敏感性分析</text>
+  
+  <!-- 应用分析 -->
+  <rect x="150" y="380" width="300" height="80" fill="#fff8e1" stroke="#ff8f00" stroke-width="2" rx="10"/>
+  <text x="300" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ff8f00">FBA应用分析</text>
+  
+  <!-- 应用类型 -->
+  <rect x="170" y="420" width="80" height="30" fill="#e3f2fd" stroke="#1976d2" stroke-width="1" rx="5"/>
+  <text x="210" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1976d2">基因敲除</text>
+  
+  <rect x="260" y="420" width="80" height="30" fill="#e8f5e8" stroke="#388e3c" stroke-width="1" rx="5"/>
+  <text x="300" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#388e3c">药物靶点</text>
+  
+  <rect x="350" y="420" width="80" height="30" fill="#fce4ec" stroke="#c2185b" stroke-width="1" rx="5"/>
+  <text x="390" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#c2185b">代谢工程</text>
+  
+  <!-- 连接箭头 -->
+  <line x1="200" y1="90" x2="240" y2="90" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="90" x2="440" y2="90" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="125" y1="120" x2="125" y2="210" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="250" x2="240" y2="250" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="250" x2="440" y2="250" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="325" y1="120" x2="125" y2="210" stroke="#666" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrowhead)"/>
+  <line x1="510" y1="120" x2="125" y2="210" stroke="#666" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrowhead)"/>
+  
+  <line x1="300" y1="280" x2="300" y2="370" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 数学公式框 -->
+  <rect x="50" y="460" width="500" height="30" fill="#ffffff" stroke="#666" stroke-width="1"/>
+  <text x="60" y="475" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#212529">核心数学模型:</text>
+  <text x="60" y="485" font-family="Arial, sans-serif" font-size="10" fill="#212529">maximize c^T·v  subject to: S·v = 0, v_min ≤ v ≤ v_max</text>
+  <text x="400" y="485" font-family="Arial, sans-serif" font-size="9" fill="#666">(S: 化学计量矩阵, v: 通量向量, c: 目标系数)</text>
+</svg>

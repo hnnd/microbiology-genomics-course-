@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="genomeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="singleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">
+    全基因组 vs 单基因系统发育比较
+  </text>
+  
+  <!-- Left side - Single Gene -->
+  <g transform="translate(50, 80)">
+    <text x="150" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+      单基因系统发育 (16S rRNA)
+    </text>
+    
+    <!-- Single gene representation -->
+    <rect x="50" y="40" width="200" height="30" fill="url(#singleGrad)" stroke="#333" stroke-width="2"/>
+    <text x="150" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      16S rRNA基因 (~1.5kb)
+    </text>
+    
+    <!-- Information content -->
+    <text x="20" y="100" font-family="Arial, sans-serif" font-size="12" fill="#333">信息量:</text>
+    <circle cx="50" cy="120" r="15" fill="#FF5722"/>
+    <circle cx="80" cy="120" r="15" fill="#FF5722"/>
+    <circle cx="110" cy="120" r="15" fill="#FF5722"/>
+    <text x="150" y="125" font-family="Arial, sans-serif" font-size="10" fill="#666">低</text>
+    
+    <!-- Resolution -->
+    <text x="20" y="160" font-family="Arial, sans-serif" font-size="12" fill="#333">分辨率:</text>
+    <rect x="50" y="170" width="30" height="15" fill="#FFC107"/>
+    <text x="90" y="182" font-family="Arial, sans-serif" font-size="10" fill="#666">有限</text>
+    
+    <!-- Limitations -->
+    <text x="20" y="210" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">局限性:</text>
+    <text x="20" y="230" font-family="Arial, sans-serif" font-size="10" fill="#666">• 近缘种区分困难</text>
+    <text x="20" y="245" font-family="Arial, sans-serif" font-size="10" fill="#666">• 进化速率差异</text>
+    <text x="20" y="260" font-family="Arial, sans-serif" font-size="10" fill="#666">• 可能发生HGT</text>
+    <text x="20" y="275" font-family="Arial, sans-serif" font-size="10" fill="#666">• 多拷贝变异</text>
+  </g>
+  
+  <!-- Right side - Whole Genome -->
+  <g transform="translate(450, 80)">
+    <text x="150" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+      全基因组系统发育
+    </text>
+    
+    <!-- Multiple genes representation -->
+    <rect x="20" y="40" width="260" height="15" fill="url(#genomeGrad)" stroke="#333" stroke-width="1"/>
+    <rect x="20" y="60" width="260" height="15" fill="url(#genomeGrad)" stroke="#333" stroke-width="1"/>
+    <rect x="20" y="80" width="260" height="15" fill="url(#genomeGrad)" stroke="#333" stroke-width="1"/>
+    <text x="150" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+      数千个核心基因 (~1-3Mb)
+    </text>
+    
+    <!-- Information content -->
+    <text x="20" y="140" font-family="Arial, sans-serif" font-size="12" fill="#333">信息量:</text>
+    <circle cx="50" cy="160" r="15" fill="#4CAF50"/>
+    <circle cx="80" cy="160" r="15" fill="#4CAF50"/>
+    <circle cx="110" cy="160" r="15" fill="#4CAF50"/>
+    <circle cx="140" cy="160" r="15" fill="#4CAF50"/>
+    <circle cx="170" cy="160" r="15" fill="#4CAF50"/>
+    <text x="200" y="165" font-family="Arial, sans-serif" font-size="10" fill="#666">高</text>
+    
+    <!-- Resolution -->
+    <text x="20" y="200" font-family="Arial, sans-serif" font-size="12" fill="#333">分辨率:</text>
+    <rect x="50" y="210" width="80" height="15" fill="#4CAF50"/>
+    <text x="140" y="222" font-family="Arial, sans-serif" font-size="10" fill="#666">优秀</text>
+    
+    <!-- Advantages -->
+    <text x="20" y="250" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">优势:</text>
+    <text x="20" y="270" font-family="Arial, sans-serif" font-size="10" fill="#666">• 高分辨率和准确性</text>
+    <text x="20" y="285" font-family="Arial, sans-serif" font-size="10" fill="#666">• 强统计支持</text>
+    <text x="20" y="300" font-family="Arial, sans-serif" font-size="10" fill="#666">• 减少随机误差</text>
+    <text x="20" y="315" font-family="Arial, sans-serif" font-size="10" fill="#666">• 整体进化模式</text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M 380 200 L 420 200" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Comparison text -->
+  <text x="400" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    进化
+  </text>
+  <text x="400" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    升级
+  </text>
+</svg>

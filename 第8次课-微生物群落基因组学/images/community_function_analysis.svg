@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .step-text { font-family: Arial, sans-serif; font-size: 14px; fill: #34495e; }
+      .small-text { font-family: Arial, sans-serif; font-size: 12px; fill: #7f8c8d; }
+      .box { fill: #ecf0f1; stroke: #34495e; stroke-width: 2; }
+      .input-box { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; }
+      .process-box { fill: #3498db; stroke: #2980b9; stroke-width: 2; }
+      .analysis-box { fill: #f39c12; stroke: #e67e22; stroke-width: 2; }
+      .result-box { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; }
+      .arrow { fill: none; stroke: #34495e; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title-text">群落功能分析流程</text>
+  
+  <!-- Input Data -->
+  <rect x="50" y="70" width="150" height="80" class="input-box"/>
+  <text x="125" y="95" text-anchor="middle" class="step-text" fill="white">宏基因组数据</text>
+  <text x="125" y="115" text-anchor="middle" class="small-text" fill="white">• 原始序列</text>
+  <text x="125" y="130" text-anchor="middle" class="small-text" fill="white">• 组装contigs</text>
+  <text x="125" y="145" text-anchor="middle" class="small-text" fill="white">• MAG基因组</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="200" y1="110" x2="250" y2="110" class="arrow"/>
+  
+  <!-- Gene Prediction -->
+  <rect x="270" y="70" width="150" height="80" class="process-box"/>
+  <text x="345" y="95" text-anchor="middle" class="step-text" fill="white">基因预测注释</text>
+  <text x="345" y="115" text-anchor="middle" class="small-text" fill="white">• ORF预测</text>
+  <text x="345" y="130" text-anchor="middle" class="small-text" fill="white">• 功能注释</text>
+  <text x="345" y="145" text-anchor="middle" class="small-text" fill="white">• 数据库比对</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="420" y1="110" x2="470" y2="110" class="arrow"/>
+  
+  <!-- Functional Catalog -->
+  <rect x="490" y="70" width="150" height="80" class="result-box"/>
+  <text x="565" y="95" text-anchor="middle" class="step-text" fill="white">功能基因目录</text>
+  <text x="565" y="115" text-anchor="middle" class="small-text" fill="white">• KEGG通路</text>
+  <text x="565" y="130" text-anchor="middle" class="small-text" fill="white">• COG分类</text>
+  <text x="565" y="145" text-anchor="middle" class="small-text" fill="white">• CAZy酶类</text>
+  
+  <!-- Arrow down from Gene Prediction -->
+  <line x1="345" y1="150" x2="345" y2="200" class="arrow"/>
+  
+  <!-- Abundance Quantification -->
+  <rect x="270" y="220" width="150" height="80" class="analysis-box"/>
+  <text x="345" y="245" text-anchor="middle" class="step-text" fill="white">丰度定量</text>
+  <text x="345" y="265" text-anchor="middle" class="small-text" fill="white">• 序列比对</text>
+  <text x="345" y="280" text-anchor="middle" class="small-text" fill="white">• 表达水平</text>
+  <text x="345" y="295" text-anchor="middle" class="small-text" fill="white">• TPM/RPKM</text>
+  
+  <!-- Arrow right from Abundance -->
+  <line x1="420" y1="260" x2="470" y2="260" class="arrow"/>
+  
+  <!-- Pathway Reconstruction -->
+  <rect x="490" y="220" width="150" height="80" class="analysis-box"/>
+  <text x="565" y="245" text-anchor="middle" class="step-text" fill="white">通路重建</text>
+  <text x="565" y="265" text-anchor="middle" class="small-text" fill="white">• 代谢网络</text>
+  <text x="565" y="280" text-anchor="middle" class="small-text" fill="white">• 功能模块</text>
+  <text x="565" y="295" text-anchor="middle" class="small-text" fill="white">• 通路完整性</text>
+  
+  <!-- Arrow left from Abundance -->
+  <line x1="270" y1="260" x2="220" y2="260" class="arrow"/>
+  
+  <!-- Taxonomic Assignment -->
+  <rect x="50" y="220" width="150" height="80" class="analysis-box"/>
+  <text x="125" y="245" text-anchor="middle" class="step-text" fill="white">物种归属</text>
+  <text x="125" y="265" text-anchor="middle" class="small-text" fill="white">• 16S rRNA</text>
+  <text x="125" y="280" text-anchor="middle" class="small-text" fill="white">• 标记基因</text>
+  <text x="125" y="295" text-anchor="middle" class="small-text" fill="white">• 系统发育</text>
+  
+  <!-- Arrow down from Taxonomic -->
+  <line x1="125" y1="300" x2="125" y2="350" class="arrow"/>
+  
+  <!-- Comparative Analysis -->
+  <rect x="50" y="370" width="200" height="80" class="process-box"/>
+  <text x="150" y="395" text-anchor="middle" class="step-text" fill="white">比较分析</text>
+  <text x="150" y="415" text-anchor="middle" class="small-text" fill="white">• 样本间差异</text>
+  <text x="150" y="430" text-anchor="middle" class="small-text" fill="white">• 时间序列</text>
+  <text x="150" y="445" text-anchor="middle" class="small-text" fill="white">• 环境梯度</text>
+  
+  <!-- Arrow down from Pathway -->
+  <line x1="565" y1="300" x2="565" y2="350" class="arrow"/>
+  
+  <!-- Network Analysis -->
+  <rect x="490" y="370" width="150" height="80" class="process-box"/>
+  <text x="565" y="395" text-anchor="middle" class="step-text" fill="white">网络分析</text>
+  <text x="565" y="415" text-anchor="middle" class="small-text" fill="white">• 功能网络</text>
+  <text x="565" y="430" text-anchor="middle" class="small-text" fill="white">• 物种互作</text>
+  <text x="565" y="445" text-anchor="middle" class="small-text" fill="white">• 关键节点</text>
+  
+  <!-- Arrow from Comparative to Network -->
+  <line x1="250" y1="410" x2="490" y2="410" class="arrow"/>
+  
+  <!-- Final Results -->
+  <rect x="300" y="480" width="200" height="80" class="result-box"/>
+  <text x="400" y="505" text-anchor="middle" class="step-text" fill="white">群落功能图谱</text>
+  <text x="400" y="525" text-anchor="middle" class="small-text" fill="white">• 功能多样性</text>
+  <text x="400" y="540" text-anchor="middle" class="small-text" fill="white">• 代谢潜力</text>
+  <text x="400" y="555" text-anchor="middle" class="small-text" fill="white">• 生态功能</text>
+  
+  <!-- Side panels with details -->
+  
+  <!-- Databases -->
+  <rect x="680" y="70" width="100" height="120" class="box"/>
+  <text x="730" y="90" text-anchor="middle" class="step-text">数据库</text>
+  <text x="690" y="110" class="small-text">KEGG</text>
+  <text x="690" y="125" class="small-text">COG/eggNOG</text>
+  <text x="690" y="140" class="small-text">CAZy</text>
+  <text x="690" y="155" class="small-text">SEED</text>
+  <text x="690" y="170" class="small-text">Pfam</text>
+  
+  <!-- Tools -->
+  <rect x="680" y="220" width="100" height="120" class="box"/>
+  <text x="730" y="240" text-anchor="middle" class="step-text">分析工具</text>
+  <text x="690" y="260" class="small-text">HUMAnN</text>
+  <text x="690" y="275" class="small-text">MEGAN</text>
+  <text x="690" y="290" class="small-text">MG-RAST</text>
+  <text x="690" y="305" class="small-text">QIIME2</text>
+  <text x="690" y="320" class="small-text">MetaPhlAn</text>
+  
+  <!-- Metrics -->
+  <rect x="680" y="370" width="100" height="120" class="box"/>
+  <text x="730" y="390" text-anchor="middle" class="step-text">评估指标</text>
+  <text x="690" y="410" class="small-text">Shannon指数</text>
+  <text x="690" y="425" class="small-text">功能丰富度</text>
+  <text x="690" y="440" class="small-text">通路完整性</text>
+  <text x="690" y="455" class="small-text">冗余度</text>
+  <text x="690" y="470" class="small-text">特异性</text>
+</svg>

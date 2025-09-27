@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2d3748; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #4a5568; }
+      .region-n { fill: #e53e3e; }
+      .region-h { fill: #3182ce; }
+      .region-c { fill: #38a169; }
+      .mature { fill: #d69e2e; }
+      .amino-acid { font-family: monospace; font-size: 10px; fill: white; }
+      .description { font-family: Arial, sans-serif; font-size: 12px; fill: #718096; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="30" class="title" text-anchor="middle">信号肽三段式结构</text>
+  
+  <!-- Signal Peptide Regions -->
+  <!-- N Region -->
+  <rect x="50" y="80" width="80" height="40" class="region-n" rx="5"/>
+  <text x="90" y="105" class="amino-acid" text-anchor="middle">N区域</text>
+  
+  <!-- H Region -->
+  <rect x="130" y="80" width="200" height="40" class="region-h" rx="5"/>
+  <text x="230" y="105" class="amino-acid" text-anchor="middle">H区域（疏水核心）</text>
+  
+  <!-- C Region -->
+  <rect x="330" y="80" width="120" height="40" class="region-c" rx="5"/>
+  <text x="390" y="105" class="amino-acid" text-anchor="middle">C区域</text>
+  
+  <!-- Cleavage Site -->
+  <line x1="450" y1="70" x2="450" y2="130" stroke="#e53e3e" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="455" y="100" class="label">切割位点</text>
+  
+  <!-- Mature Protein -->
+  <rect x="470" y="80" width="180" height="40" class="mature" rx="5"/>
+  <text x="560" y="105" class="amino-acid" text-anchor="middle">成熟蛋白</text>
+  
+  <!-- Length indicators -->
+  <line x1="50" y1="140" x2="130" y2="140" stroke="#666" stroke-width="1"/>
+  <text x="90" y="155" class="description" text-anchor="middle">1-5 aa</text>
+  
+  <line x1="130" y1="140" x2="330" y2="140" stroke="#666" stroke-width="1"/>
+  <text x="230" y="155" class="description" text-anchor="middle">7-15 aa</text>
+  
+  <line x1="330" y1="140" x2="450" y2="140" stroke="#666" stroke-width="1"/>
+  <text x="390" y="155" class="description" text-anchor="middle">3-7 aa</text>
+  
+  <!-- Characteristics -->
+  <text x="90" y="180" class="description" text-anchor="middle">带正电荷</text>
+  <text x="90" y="195" class="description" text-anchor="middle">(Lys, Arg)</text>
+  
+  <text x="230" y="180" class="description" text-anchor="middle">疏水性氨基酸</text>
+  <text x="230" y="195" class="description" text-anchor="middle">(Ala, Val, Leu, Ile)</text>
+  
+  <text x="390" y="180" class="description" text-anchor="middle">极性氨基酸</text>
+  <text x="390" y="195" class="description" text-anchor="middle">含切割识别序列</text>
+  
+  <!-- Arrow showing direction -->
+  <path d="M 50 60 L 650 60" stroke="#4a5568" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="350" y="55" class="label" text-anchor="middle">N端 → C端</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a5568"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="230" width="15" height="15" class="region-n"/>
+  <text x="70" y="242" class="label">N区域 (带正电荷)</text>
+  
+  <rect x="200" y="230" width="15" height="15" class="region-h"/>
+  <text x="220" y="242" class="label">H区域 (疏水核心)</text>
+  
+  <rect x="350" y="230" width="15" height="15" class="region-c"/>
+  <text x="370" y="242" class="label">C区域 (极性，切割位点)</text>
+  
+  <rect x="520" y="230" width="15" height="15" class="mature"/>
+  <text x="540" y="242" class="label">成熟蛋白</text>
+</svg>

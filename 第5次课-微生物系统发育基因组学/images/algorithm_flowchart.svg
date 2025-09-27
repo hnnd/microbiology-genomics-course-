@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="stepGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976D2;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Arrow marker definition -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">
+    全基因组系统发育分析流程
+  </text>
+  
+  <!-- Step 1: Input -->
+  <rect x="200" y="60" width="200" height="40" rx="20" fill="url(#stepGrad)" stroke="#1976D2" stroke-width="2"/>
+  <text x="300" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+    基因组序列输入
+  </text>
+  
+  <!-- Arrow 1 -->
+  <path d="M 300 100 L 300 130" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: ANI Calculation -->
+  <rect x="200" y="130" width="200" height="40" rx="20" fill="url(#stepGrad)" stroke="#1976D2" stroke-width="2"/>
+  <text x="300" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+    ANI/AAI计算
+  </text>
+
+  <!-- Arrow 2 -->
+  <path d="M 300 170 L 300 200" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3: Core Gene Identification -->
+  <rect x="200" y="200" width="200" height="40" rx="20" fill="url(#stepGrad)" stroke="#1976D2" stroke-width="2"/>
+  <text x="300" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+    核心基因识别
+  </text>
+  
+  <!-- Arrow 3 -->
+  <path d="M 300 240 L 300 270" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 4: Multiple Alignment -->
+  <rect x="200" y="270" width="200" height="40" rx="20" fill="url(#stepGrad)" stroke="#1976D2" stroke-width="2"/>
+  <text x="300" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+    多序列比对
+  </text>
+  
+  <!-- Arrow 4 -->
+  <path d="M 300 310 L 300 340" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 5: Tree Construction -->
+  <rect x="200" y="340" width="200" height="40" rx="20" fill="url(#stepGrad)" stroke="#1976D2" stroke-width="2"/>
+  <text x="300" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+    系统发育树构建
+  </text>
+  
+  <!-- Arrow 5 -->
+  <path d="M 300 380 L 300 410" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 6: Time Estimation -->
+  <rect x="200" y="410" width="200" height="40" rx="20" fill="url(#stepGrad)" stroke="#1976D2" stroke-width="2"/>
+  <text x="300" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" font-weight="bold">
+    发散时间估算
+  </text>
+  
+  <!-- Side annotations -->
+  <text x="50" y="85" font-family="Arial, sans-serif" font-size="10" fill="#666">FASTA格式</text>
+  <text x="50" y="155" font-family="Arial, sans-serif" font-size="10" fill="#666">FastANI/MASH</text>
+  <text x="50" y="225" font-family="Arial, sans-serif" font-size="10" fill="#666">OrthoFinder</text>
+  <text x="50" y="295" font-family="Arial, sans-serif" font-size="10" fill="#666">MUSCLE/MAFFT</text>
+  <text x="50" y="365" font-family="Arial, sans-serif" font-size="10" fill="#666">IQ-TREE/RAxML</text>
+  <text x="50" y="435" font-family="Arial, sans-serif" font-size="10" fill="#666">BEAST/r8s</text>
+
+</svg>

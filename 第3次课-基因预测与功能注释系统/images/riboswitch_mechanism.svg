@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2d3748; }
+      .label { font-family: Arial, sans-serif; font-size: 12px; fill: #4a5568; }
+      .aptamer { fill: #3182ce; stroke: #2c5282; stroke-width: 2; }
+      .platform { fill: #38a169; stroke: #2f855a; stroke-width: 2; }
+      .ligand { fill: #e53e3e; stroke: #c53030; stroke-width: 2; }
+      .rna-strand { stroke: #4a5568; stroke-width: 3; fill: none; }
+      .arrow { stroke: #d69e2e; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+  </defs>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d69e2e"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="350" y="30" class="title" text-anchor="middle">核糖开关调控机制</text>
+  
+  <!-- Left side: Without ligand (OFF state) -->
+  <text x="150" y="60" class="label" text-anchor="middle">无配体结合状态（转录进行）</text>
+  
+  <!-- Aptamer domain (unbound) -->
+  <path d="M 80 100 Q 120 80 160 100 Q 200 120 160 140 Q 120 160 80 140 Z" class="aptamer"/>
+  <text x="140" y="125" class="label" text-anchor="middle" fill="white">适配子</text>
+  <text x="140" y="140" class="label" text-anchor="middle" fill="white">区域</text>
+  
+  <!-- Expression platform (open) -->
+  <path d="M 160 140 L 220 140 Q 240 140 240 160 L 240 200 Q 240 220 220 220 L 160 220 Q 140 220 140 200 L 140 160 Q 140 140 160 140" class="platform"/>
+  <text x="190" y="175" class="label" text-anchor="middle" fill="white">表达</text>
+  <text x="190" y="190" class="label" text-anchor="middle" fill="white">平台</text>
+  
+  <!-- RNA polymerase continues -->
+  <path d="M 240 180 L 320 180" class="arrow"/>
+  <text x="280" y="175" class="label" text-anchor="middle">转录继续</text>
+  
+  <!-- mRNA -->
+  <rect x="320" y="170" width="80" height="20" fill="#d69e2e" rx="5"/>
+  <text x="360" y="185" class="label" text-anchor="middle" fill="white">mRNA</text>
+  
+  <!-- Right side: With ligand (ON state) -->
+  <text x="550" y="60" class="label" text-anchor="middle">配体结合状态（转录终止）</text>
+  
+  <!-- Ligand -->
+  <circle cx="520" cy="100" r="15" class="ligand"/>
+  <text x="520" y="105" class="label" text-anchor="middle" fill="white">配体</text>
+  
+  <!-- Aptamer domain (bound) -->
+  <path d="M 480 120 Q 520 100 560 120 Q 600 140 560 160 Q 520 180 480 160 Z" class="aptamer"/>
+  <text x="540" y="145" class="label" text-anchor="middle" fill="white">适配子</text>
+  <text x="540" y="160" class="label" text-anchor="middle" fill="white">区域</text>
+  
+  <!-- Expression platform (closed/terminator) -->
+  <path d="M 560 160 Q 580 180 560 200 Q 540 220 520 200 Q 500 180 520 160 Q 540 140 560 160" class="platform"/>
+  <text x="540" y="185" class="label" text-anchor="middle" fill="white">终止子</text>
+  
+  <!-- Transcription termination -->
+  <line x1="580" y1="180" x2="620" y2="180" stroke="#e53e3e" stroke-width="4"/>
+  <text x="600" y="175" class="label" text-anchor="middle">转录终止</text>
+  
+  <!-- Mechanism explanation -->
+  <text x="350" y="280" class="title" text-anchor="middle">调控机制</text>
+  
+  <!-- Step 1 -->
+  <rect x="50" y="300" width="15" height="15" fill="#3182ce"/>
+  <text x="70" y="312" class="label">1. 适配子区域识别并结合特定小分子配体</text>
+  
+  <!-- Step 2 -->
+  <rect x="50" y="325" width="15" height="15" fill="#38a169"/>
+  <text x="70" y="337" class="label">2. 配体结合引起RNA二级结构变化</text>
+  
+  <!-- Step 3 -->
+  <rect x="50" y="350" width="15" height="15" fill="#d69e2e"/>
+  <text x="70" y="362" class="label">3. 表达平台响应结构变化，调控基因表达</text>
+  
+  <!-- Applications -->
+  <text x="400" y="312" class="label">应用实例：</text>
+  <text x="400" y="327" class="label">• 氨基酸合成调控</text>
+  <text x="400" y="342" class="label">• 维生素代谢调控</text>
+  <text x="400" y="357" class="label">• 金属离子稳态</text>
+  <text x="400" y="372" class="label">• 抗生素抗性</text>
+</svg>

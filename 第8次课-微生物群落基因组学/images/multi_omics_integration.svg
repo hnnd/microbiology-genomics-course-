@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .step-text { font-family: Arial, sans-serif; font-size: 14px; fill: #34495e; }
+      .small-text { font-family: Arial, sans-serif; font-size: 12px; fill: #7f8c8d; }
+      .omics-box { fill: #3498db; stroke: #2980b9; stroke-width: 2; }
+      .genomics-box { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; }
+      .transcriptomics-box { fill: #f39c12; stroke: #e67e22; stroke-width: 2; }
+      .proteomics-box { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; }
+      .metabolomics-box { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; }
+      .integration-box { fill: #34495e; stroke: #2c3e50; stroke-width: 2; }
+      .arrow { fill: none; stroke: #34495e; stroke-width: 2; marker-end: url(#arrowhead); }
+      .integration-arrow { fill: none; stroke: #e67e22; stroke-width: 3; marker-end: url(#orangearrow); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+    <marker id="orangearrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e67e22"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title-text">多组学整合分析策略</text>
+  
+  <!-- Metagenomics -->
+  <rect x="50" y="80" width="150" height="100" class="genomics-box"/>
+  <text x="125" y="110" text-anchor="middle" class="step-text" fill="white">宏基因组学</text>
+  <text x="125" y="130" text-anchor="middle" class="small-text" fill="white">Metagenomics</text>
+  <text x="70" y="150" class="small-text" fill="white">• 功能潜力</text>
+  <text x="70" y="165" class="small-text" fill="white">• 基因丰度</text>
+  
+  <!-- Metatranscriptomics -->
+  <rect x="250" y="80" width="150" height="100" class="transcriptomics-box"/>
+  <text x="325" y="110" text-anchor="middle" class="step-text" fill="white">宏转录组学</text>
+  <text x="325" y="130" text-anchor="middle" class="small-text" fill="white">Metatranscriptomics</text>
+  <text x="270" y="150" class="small-text" fill="white">• 基因表达</text>
+  <text x="270" y="165" class="small-text" fill="white">• 活跃功能</text>
+  
+  <!-- Metaproteomics -->
+  <rect x="450" y="80" width="150" height="100" class="proteomics-box"/>
+  <text x="525" y="110" text-anchor="middle" class="step-text" fill="white">宏蛋白组学</text>
+  <text x="525" y="130" text-anchor="middle" class="small-text" fill="white">Metaproteomics</text>
+  <text x="470" y="150" class="small-text" fill="white">• 蛋白丰度</text>
+  <text x="470" y="165" class="small-text" fill="white">• 实际功能</text>
+  
+  <!-- Metabolomics -->
+  <rect x="350" y="220" width="150" height="100" class="metabolomics-box"/>
+  <text x="425" y="250" text-anchor="middle" class="step-text" fill="white">代谢组学</text>
+  <text x="425" y="270" text-anchor="middle" class="small-text" fill="white">Metabolomics</text>
+  <text x="370" y="290" class="small-text" fill="white">• 代谢产物</text>
+  <text x="370" y="305" class="small-text" fill="white">• 功能输出</text>
+  
+  <!-- Integration arrows -->
+  <line x1="125" y1="180" x2="200" y2="240" class="integration-arrow"/>
+  <line x1="325" y1="180" x2="300" y2="240" class="integration-arrow"/>
+  <line x1="525" y1="180" x2="500" y2="240" class="integration-arrow"/>
+  <line x1="425" y1="220" x2="425" y2="180" class="integration-arrow"/>
+  
+  <!-- Central Integration Hub -->
+  <ellipse cx="300" cy="270" rx="80" ry="40" class="integration-box"/>
+  <text x="300" y="270" text-anchor="middle" class="step-text" fill="white">数据整合</text>
+  <text x="300" y="285" text-anchor="middle" class="small-text" fill="white">Data Integration</text>
+  
+  <!-- Integration Methods -->
+  <rect x="50" y="350" width="200" height="120" class="omics-box"/>
+  <text x="150" y="375" text-anchor="middle" class="step-text" fill="white">整合方法</text>
+  <text x="70" y="395" class="small-text" fill="white">• 相关性分析</text>
+  <text x="70" y="410" class="small-text" fill="white">• 网络分析</text>
+  <text x="70" y="425" class="small-text" fill="white">• 机器学习</text>
+  <text x="70" y="440" class="small-text" fill="white">• 多元统计</text>
+  <text x="70" y="455" class="small-text" fill="white">• 时间序列分析</text>
+  
+  <!-- Analysis Tools -->
+  <rect x="300" y="350" width="200" height="120" class="omics-box"/>
+  <text x="400" y="375" text-anchor="middle" class="step-text" fill="white">分析工具</text>
+  <text x="320" y="395" class="small-text" fill="white">• QIIME2/DADA2</text>
+  <text x="320" y="410" class="small-text" fill="white">• HUMAnN3</text>
+  <text x="320" y="425" class="small-text" fill="white">• MetaboAnalyst</text>
+  <text x="320" y="440" class="small-text" fill="white">• MixOmics</text>
+  <text x="320" y="455" class="small-text" fill="white">• WGCNA</text>
+  
+  <!-- Applications -->
+  <rect x="550" y="350" width="200" height="120" class="omics-box"/>
+  <text x="650" y="375" text-anchor="middle" class="step-text" fill="white">应用领域</text>
+  <text x="570" y="395" class="small-text" fill="white">• 疾病机制研究</text>
+  <text x="570" y="410" class="small-text" fill="white">• 环境监测</text>
+  <text x="570" y="425" class="small-text" fill="white">• 生物技术开发</text>
+  <text x="570" y="440" class="small-text" fill="white">• 药物发现</text>
+  <text x="570" y="455" class="small-text" fill="white">• 精准医学</text>
+  
+  <!-- Arrows from integration to applications -->
+  <line x1="300" y1="310" x2="150" y2="350" class="arrow"/>
+  <line x1="300" y1="310" x2="400" y2="350" class="arrow"/>
+  <line x1="300" y1="310" x2="650" y2="350" class="arrow"/>
+  
+  <!-- Data Flow Information -->
+  <rect x="50" y="500" width="700" height="80" fill="none" stroke="#34495e" stroke-width="1"/>
+  <text x="400" y="520" text-anchor="middle" class="title-text">数据流向与信息层次</text>
+  
+  <text x="70" y="540" class="small-text">基因组 → 转录组 → 蛋白组 → 代谢组</text>
+  <text x="70" y="555" class="small-text">功能潜力 → 基因表达 → 蛋白活性 → 代谢表型</text>
+  <text x="70" y="570" class="small-text">静态信息 → 动态调控 → 功能实现 → 生物学输出</text>
+  
+  <!-- Challenges box -->
+  <rect x="650" y="80" width="120" height="240" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="710" y="100" text-anchor="middle" class="step-text">技术挑战</text>
+  
+  <text x="665" y="125" class="small-text">数据标准化</text>
+  <text x="665" y="140" class="small-text">批次效应</text>
+  <text x="665" y="155" class="small-text">缺失数据</text>
+  <text x="665" y="170" class="small-text">维度诅咒</text>
+  <text x="665" y="185" class="small-text">因果推断</text>
+  <text x="665" y="200" class="small-text">时间延迟</text>
+  <text x="665" y="215" class="small-text">空间异质性</text>
+  <text x="665" y="230" class="small-text">计算复杂度</text>
+  <text x="665" y="245" class="small-text">结果解释</text>
+  <text x="665" y="260" class="small-text">重现性</text>
+  <text x="665" y="275" class="small-text">成本控制</text>
+  <text x="665" y="290" class="small-text">标准化流程</text>
+  <text x="665" y="305" class="small-text">质量控制</text>
+</svg>

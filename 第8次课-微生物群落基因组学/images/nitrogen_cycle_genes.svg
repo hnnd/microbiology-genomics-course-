@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .step-text { font-family: Arial, sans-serif; font-size: 14px; fill: #34495e; }
+      .small-text { font-family: Arial, sans-serif; font-size: 12px; fill: #7f8c8d; }
+      .gene-text { font-family: Arial, sans-serif; font-size: 11px; fill: #2c3e50; font-style: italic; }
+      .compound-box { fill: #3498db; stroke: #2980b9; stroke-width: 2; }
+      .process-box { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; }
+      .gene-box { fill: #f39c12; stroke: #e67e22; stroke-width: 1; }
+      .arrow { fill: none; stroke: #34495e; stroke-width: 2; marker-end: url(#arrowhead); }
+      .cycle-arrow { fill: none; stroke: #27ae60; stroke-width: 3; marker-end: url(#greenarrow); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+    <marker id="greenarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" class="title-text">氮循环关键基因网络</text>
+  
+  <!-- N2 (Atmospheric Nitrogen) -->
+  <ellipse cx="500" cy="80" rx="40" ry="25" class="compound-box"/>
+  <text x="500" y="85" text-anchor="middle" class="step-text" fill="white">N₂</text>
+  <text x="500" y="115" text-anchor="middle" class="small-text">大气氮气</text>
+  
+  <!-- Nitrogen Fixation -->
+  <path d="M 460 105 Q 400 140 340 175" class="cycle-arrow"/>
+  <rect x="270" y="140" width="80" height="40" class="gene-box"/>
+  <text x="310" y="155" text-anchor="middle" class="gene-text">nifH, nifD, nifK</text>
+  <text x="310" y="170" text-anchor="middle" class="gene-text">固氮酶</text>
+  
+  <!-- NH3/NH4+ (Ammonia) -->
+  <ellipse cx="200" cy="220" rx="50" ry="25" class="compound-box"/>
+  <text x="200" y="225" text-anchor="middle" class="step-text" fill="white">NH₃/NH₄⁺</text>
+  <text x="200" y="255" text-anchor="middle" class="small-text">氨/铵离子</text>
+  
+  <!-- Nitrification Step 1: Ammonia to Nitrite -->
+  <line x1="250" y1="220" x2="340" y2="220" class="arrow"/>
+  <rect x="280" y="190" width="80" height="40" class="gene-box"/>
+  <text x="320" y="205" text-anchor="middle" class="gene-text">amoA, amoB, amoC</text>
+  <text x="320" y="220" text-anchor="middle" class="gene-text">氨单加氧酶</text>
+  
+  <!-- NO2- (Nitrite) -->
+  <ellipse cx="400" cy="220" rx="40" ry="25" class="compound-box"/>
+  <text x="400" y="225" text-anchor="middle" class="step-text" fill="white">NO₂⁻</text>
+  <text x="400" y="255" text-anchor="middle" class="small-text">亚硝酸盐</text>
+  
+  <!-- Nitrification Step 2: Nitrite to Nitrate -->
+  <line x1="440" y1="220" x2="560" y2="220" class="arrow"/>
+  <rect x="480" y="190" width="80" height="40" class="gene-box"/>
+  <text x="520" y="205" text-anchor="middle" class="gene-text">nxrA, nxrB</text>
+  <text x="520" y="220" text-anchor="middle" class="gene-text">亚硝酸氧化酶</text>
+  
+  <!-- NO3- (Nitrate) -->
+  <ellipse cx="650" cy="220" rx="40" ry="25" class="compound-box"/>
+  <text x="650" y="225" text-anchor="middle" class="step-text" fill="white">NO₃⁻</text>
+  <text x="650" y="255" text-anchor="middle" class="small-text">硝酸盐</text>
+  
+  <!-- Denitrification pathway -->
+  <!-- NO3- to NO2- -->
+  <line x1="650" y1="245" x2="650" y2="320" class="arrow"/>
+  <rect x="610" y="280" width="80" height="40" class="gene-box"/>
+  <text x="650" y="295" text-anchor="middle" class="gene-text">narG, napA</text>
+  <text x="650" y="310" text-anchor="middle" class="gene-text">硝酸还原酶</text>
+  
+  <!-- NO2- (in denitrification) -->
+  <ellipse cx="650" cy="370" rx="40" ry="25" class="compound-box"/>
+  <text x="650" y="375" text-anchor="middle" class="step-text" fill="white">NO₂⁻</text>
+  
+  <!-- NO2- to NO -->
+  <line x1="610" y1="370" x2="540" y2="370" class="arrow"/>
+  <rect x="560" y="350" width="80" height="40" class="gene-box"/>
+  <text x="600" y="365" text-anchor="middle" class="gene-text">nirK, nirS</text>
+  <text x="600" y="380" text-anchor="middle" class="gene-text">亚硝酸还原酶</text>
+  
+  <!-- NO (Nitric Oxide) -->
+  <ellipse cx="480" cy="370" rx="30" ry="25" class="compound-box"/>
+  <text x="480" y="375" text-anchor="middle" class="step-text" fill="white">NO</text>
+  <text x="480" y="405" text-anchor="middle" class="small-text">一氧化氮</text>
+  
+  <!-- NO to N2O -->
+  <line x1="450" y1="370" x2="380" y2="370" class="arrow"/>
+  <rect x="390" y="350" width="80" height="40" class="gene-box"/>
+  <text x="430" y="365" text-anchor="middle" class="gene-text">norB, norC</text>
+  <text x="430" y="380" text-anchor="middle" class="gene-text">一氧化氮还原酶</text>
+  
+  <!-- N2O (Nitrous Oxide) -->
+  <ellipse cx="320" cy="370" rx="35" ry="25" class="compound-box"/>
+  <text x="320" y="375" text-anchor="middle" class="step-text" fill="white">N₂O</text>
+  <text x="320" y="405" text-anchor="middle" class="small-text">氧化亚氮</text>
+  
+  <!-- N2O to N2 -->
+  <path d="M 320 345 Q 340 300 380 260 Q 420 220 460 180 Q 480 140 500 105" class="cycle-arrow"/>
+  <rect x="240" y="300" width="80" height="40" class="gene-box"/>
+  <text x="280" y="315" text-anchor="middle" class="gene-text">nosZ</text>
+  <text x="280" y="330" text-anchor="middle" class="gene-text">氧化亚氮还原酶</text>
+  
+  <!-- Anammox pathway -->
+  <rect x="750" y="280" width="100" height="50" class="process-box"/>
+  <text x="800" y="300" text-anchor="middle" class="step-text" fill="white">厌氧氨氧化</text>
+  <text x="800" y="315" text-anchor="middle" class="small-text" fill="white">(Anammox)</text>
+  
+  <!-- Anammox genes -->
+  <rect x="750" y="340" width="100" height="30" class="gene-box"/>
+  <text x="800" y="355" text-anchor="middle" class="gene-text">hzo, hdh</text>
+  
+  <!-- Arrows for anammox -->
+  <line x1="250" y1="235" x2="750" y2="290" class="arrow"/>
+  <line x1="400" y1="245" x2="750" y2="300" class="arrow"/>
+  <line x1="800" y1="330" x2="520" y2="120" class="arrow"/>
+  
+  <!-- Assimilatory pathway -->
+  <rect x="50" y="320" width="100" height="50" class="process-box"/>
+  <text x="100" y="340" text-anchor="middle" class="step-text" fill="white">同化作用</text>
+  <text x="100" y="355" text-anchor="middle" class="small-text" fill="white">生物合成</text>
+  
+  <!-- Assimilatory genes -->
+  <rect x="50" y="380" width="100" height="30" class="gene-box"/>
+  <text x="100" y="395" text-anchor="middle" class="gene-text">nasA, nirA, nrfA</text>
+  
+  <!-- Arrow from NH4+ to assimilation -->
+  <line x1="150" y1="235" x2="100" y2="320" class="arrow"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="500" width="900" height="150" fill="none" stroke="#34495e" stroke-width="1"/>
+  <text x="500" y="520" text-anchor="middle" class="title-text">基因功能说明</text>
+  
+  <!-- Legend items -->
+  <rect x="70" y="530" width="15" height="15" class="gene-box"/>
+  <text x="95" y="542" class="small-text">关键酶基因</text>
+
+  <rect x="200" y="530" width="15" height="15" class="compound-box"/>
+  <text x="225" y="542" class="small-text">氮化合物</text>
+
+  <rect x="330" y="530" width="15" height="15" class="process-box"/>
+  <text x="355" y="542" class="small-text">生物过程</text>
+  
+  <!-- Gene descriptions -->
+  <text x="70" y="565" class="small-text">• nifH/D/K: 固氮酶复合体，催化N₂→NH₃</text>
+  <text x="70" y="580" class="small-text">• amoA/B/C: 氨单加氧酶，催化NH₃→NO₂⁻</text>
+  <text x="70" y="595" class="small-text">• nxrA/B: 亚硝酸氧化酶，催化NO₂⁻→NO₃⁻</text>
+  <text x="70" y="610" class="small-text">• nasA/nirA/nrfA: 同化型还原酶，用于生物合成</text>
+
+  <text x="500" y="565" class="small-text">• narG/napA: 硝酸还原酶，催化NO₃⁻→NO₂⁻</text>
+  <text x="500" y="580" class="small-text">• nirK/S: 亚硝酸还原酶，催化NO₂⁻→NO</text>
+  <text x="500" y="595" class="small-text">• norB/C: 一氧化氮还原酶，催化NO→N₂O</text>
+  <text x="500" y="610" class="small-text">• nosZ: 氧化亚氮还原酶，催化N₂O→N₂</text>
+  <text x="500" y="625" class="small-text">• hzo/hdh: 厌氧氨氧化关键酶，直接转化NH₄⁺+NO₂⁻→N₂</text>
+</svg>

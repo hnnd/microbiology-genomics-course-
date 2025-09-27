@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="700" height="500" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- 标题 -->
+  <text x="350" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#212529">氨基酸合成网络</text>
+  
+  <!-- 中心代谢前体物质 -->
+  <rect x="300" y="60" width="100" height="40" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+  <text x="350" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f57c00">中心代谢</text>
+  
+  <!-- 主要前体物质 -->
+  <ellipse cx="150" cy="150" rx="40" ry="20" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="150" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1976d2">3-磷酸甘油酸</text>
+  
+  <ellipse cx="350" cy="150" rx="35" ry="20" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="350" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#388e3c">丙酮酸</text>
+  
+  <ellipse cx="550" cy="150" rx="40" ry="20" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+  <text x="550" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c2185b">草酰乙酸</text>
+  
+  <ellipse cx="250" cy="220" rx="35" ry="20" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="250" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7b1fa2">α-酮戊二酸</text>
+  
+  <!-- 氨基酸家族 -->
+  
+  <!-- 丝氨酸家族 -->
+  <circle cx="80" cy="250" r="18" fill="#e1f5fe" stroke="#0277bd" stroke-width="2"/>
+  <text x="80" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277bd">Ser</text>
+  
+  <circle cx="120" cy="300" r="18" fill="#e1f5fe" stroke="#0277bd" stroke-width="2"/>
+  <text x="120" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277bd">Gly</text>
+  
+  <circle cx="180" cy="300" r="18" fill="#e1f5fe" stroke="#0277bd" stroke-width="2"/>
+  <text x="180" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0277bd">Cys</text>
+  
+  <!-- 丙酮酸家族 -->
+  <circle cx="320" cy="250" r="18" fill="#e8f5e8" stroke="#2e7d32" stroke-width="2"/>
+  <text x="320" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32">Ala</text>
+  
+  <circle cx="380" cy="250" r="18" fill="#e8f5e8" stroke="#2e7d32" stroke-width="2"/>
+  <text x="380" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32">Val</text>
+  
+  <circle cx="350" cy="300" r="18" fill="#e8f5e8" stroke="#2e7d32" stroke-width="2"/>
+  <text x="350" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32">Leu</text>
+  
+  <circle cx="410" cy="300" r="18" fill="#e8f5e8" stroke="#2e7d32" stroke-width="2"/>
+  <text x="410" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32">Ile</text>
+  
+  <!-- 天冬氨酸家族 -->
+  <circle cx="520" cy="250" r="18" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+  <text x="520" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d32f2f">Asp</text>
+  
+  <circle cx="580" cy="250" r="18" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+  <text x="580" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d32f2f">Asn</text>
+  
+  <circle cx="520" cy="300" r="18" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+  <text x="520" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d32f2f">Thr</text>
+  
+  <circle cx="580" cy="300" r="18" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+  <text x="580" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d32f2f">Lys</text>
+  
+  <circle cx="620" cy="250" r="18" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+  <text x="620" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d32f2f">Met</text>
+  
+  <!-- 谷氨酸家族 -->
+  <circle cx="220" cy="300" r="18" fill="#fff8e1" stroke="#ff8f00" stroke-width="2"/>
+  <text x="220" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff8f00">Glu</text>
+  
+  <circle cx="280" cy="300" r="18" fill="#fff8e1" stroke="#ff8f00" stroke-width="2"/>
+  <text x="280" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff8f00">Gln</text>
+  
+  <circle cx="250" cy="350" r="18" fill="#fff8e1" stroke="#ff8f00" stroke-width="2"/>
+  <text x="250" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff8f00">Pro</text>
+  
+  <circle cx="200" cy="350" r="18" fill="#fff8e1" stroke="#ff8f00" stroke-width="2"/>
+  <text x="200" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff8f00">Arg</text>
+  
+  <!-- 芳香族氨基酸 -->
+  <ellipse cx="450" cy="400" rx="30" ry="15" fill="#e0f2f1" stroke="#00695c" stroke-width="2"/>
+  <text x="450" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#00695c">莽草酸途径</text>
+  
+  <circle cx="400" cy="450" r="18" fill="#e0f2f1" stroke="#00695c" stroke-width="2"/>
+  <text x="400" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#00695c">Phe</text>
+  
+  <circle cx="450" cy="450" r="18" fill="#e0f2f1" stroke="#00695c" stroke-width="2"/>
+  <text x="450" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#00695c">Tyr</text>
+  
+  <circle cx="500" cy="450" r="18" fill="#e0f2f1" stroke="#00695c" stroke-width="2"/>
+  <text x="500" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#00695c">Trp</text>
+  
+  <!-- 组氨酸 -->
+  <circle cx="100" cy="400" r="18" fill="#f9fbe7" stroke="#827717" stroke-width="2"/>
+  <text x="100" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#827717">His</text>
+  
+  <!-- 连接线 -->
+  <!-- 从中心代谢到前体物质 -->
+  <line x1="320" y1="100" x2="170" y2="140" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="100" x2="350" y2="130" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="380" y1="100" x2="530" y2="140" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="100" x2="250" y2="200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 从前体物质到氨基酸 -->
+  <line x1="130" y1="160" x2="90" y2="235" stroke="#0277bd" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="80" y1="268" x2="120" y2="285" stroke="#0277bd" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="80" y1="268" x2="170" y2="285" stroke="#0277bd" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <line x1="340" y1="165" x2="325" y2="235" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="360" y1="165" x2="375" y2="235" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="170" x2="350" y2="285" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="380" y1="268" x2="400" y2="285" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <line x1="540" y1="165" x2="525" y2="235" stroke="#d32f2f" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="560" y1="165" x2="575" y2="235" stroke="#d32f2f" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="170" x2="610" y2="235" stroke="#d32f2f" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="520" y1="268" x2="520" y2="285" stroke="#d32f2f" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="580" y1="268" x2="580" y2="285" stroke="#d32f2f" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <line x1="240" y1="235" x2="225" y2="285" stroke="#ff8f00" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="260" y1="235" x2="275" y2="285" stroke="#ff8f00" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="250" y1="240" x2="250" y2="335" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="230" y1="315" x2="210" y2="335" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- 芳香族氨基酸连接 -->
+  <line x1="450" y1="415" x2="400" y2="435" stroke="#00695c" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="415" x2="450" y2="435" stroke="#00695c" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="415" x2="500" y2="435" stroke="#00695c" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- 组氨酸独立途径 -->
+  <line x1="300" y1="100" x2="110" y2="385" stroke="#827717" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  
+  <!-- 图例 -->
+  <rect x="20" y="450" width="250" height="40" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="30" y="465" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#212529">氨基酸家族:</text>
+  
+  <circle cx="50" cy="475" r="8" fill="#e1f5fe" stroke="#0277bd" stroke-width="2"/>
+  <text x="65" y="480" font-family="Arial, sans-serif" font-size="9" fill="#212529">丝氨酸族</text>
+  
+  <circle cx="120" cy="475" r="8" fill="#e8f5e8" stroke="#2e7d32" stroke-width="2"/>
+  <text x="135" y="480" font-family="Arial, sans-serif" font-size="9" fill="#212529">丙酮酸族</text>
+  
+  <circle cx="190" cy="475" r="8" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+  <text x="205" y="480" font-family="Arial, sans-serif" font-size="9" fill="#212529">天冬氨酸族</text>
+</svg>

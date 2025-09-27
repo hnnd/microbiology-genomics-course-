@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .stage-text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: white; }
+      .step-text { font-family: Arial, sans-serif; font-size: 12px; fill: #34495e; }
+      .small-text { font-family: Arial, sans-serif; font-size: 10px; fill: #7f8c8d; }
+      .discovery-box { fill: #3498db; stroke: #2980b9; stroke-width: 2; rx: 10; }
+      .validation-box { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; rx: 10; }
+      .engineering-box { fill: #f39c12; stroke: #e67e22; stroke-width: 2; rx: 10; }
+      .development-box { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; rx: 10; }
+      .production-box { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; rx: 10; }
+      .arrow { stroke: #34495e; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .feedback-arrow { stroke: #e67e22; stroke-width: 2; fill: none; stroke-dasharray: 5,5; marker-end: url(#feedback); }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#34495e"/>
+    </marker>
+    <marker id="feedback" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e67e22"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" class="title-text">功能基因应用开发流水线</text>
+  
+  <!-- Stage 1: Gene Discovery -->
+  <rect x="50" y="80" width="150" height="100" class="discovery-box"/>
+  <text x="125" y="110" text-anchor="middle" class="stage-text">基因发现</text>
+  <text x="125" y="130" text-anchor="middle" class="stage-text">Gene Discovery</text>
+  
+  <!-- Discovery details -->
+  <text x="70" y="150" class="small-text" fill="white">• 基因组挖掘</text>
+  <text x="70" y="165" class="small-text" fill="white">• 宏基因组筛选</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="200" y1="130" x2="250" y2="130" class="arrow"/>
+  
+  <!-- Stage 2: Functional Validation -->
+  <rect x="270" y="80" width="150" height="100" class="validation-box"/>
+  <text x="345" y="110" text-anchor="middle" class="stage-text">功能验证</text>
+  <text x="345" y="130" text-anchor="middle" class="stage-text">Validation</text>
+  
+  <!-- Validation details -->
+  <text x="290" y="150" class="small-text" fill="white">• 异源表达</text>
+  <text x="290" y="165" class="small-text" fill="white">• 活性检测</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="420" y1="130" x2="470" y2="130" class="arrow"/>
+  
+  <!-- Stage 3: Protein Engineering -->
+  <rect x="490" y="80" width="150" height="100" class="engineering-box"/>
+  <text x="565" y="110" text-anchor="middle" class="stage-text">工程改造</text>
+  <text x="565" y="130" text-anchor="middle" class="stage-text">Engineering</text>
+  
+  <!-- Engineering details -->
+  <text x="510" y="150" class="small-text" fill="white">• 定向进化</text>
+  <text x="510" y="165" class="small-text" fill="white">• 理性设计</text>
+  
+  <!-- Arrow 3 -->
+  <line x1="640" y1="130" x2="690" y2="130" class="arrow"/>
+  
+  <!-- Stage 4: Process Development -->
+  <rect x="710" y="80" width="150" height="100" class="development-box"/>
+  <text x="785" y="110" text-anchor="middle" class="stage-text">工艺开发</text>
+  <text x="785" y="130" text-anchor="middle" class="stage-text">Development</text>
+  
+  <!-- Development details -->
+  <text x="730" y="150" class="small-text" fill="white">• 发酵优化</text>
+  <text x="730" y="165" class="small-text" fill="white">• 纯化工艺</text>
+  
+  <!-- Arrow down -->
+  <line x1="785" y1="180" x2="785" y2="230" class="arrow"/>
+  
+  <!-- Stage 5: Industrial Production -->
+  <rect x="710" y="250" width="150" height="100" class="production-box"/>
+  <text x="785" y="280" text-anchor="middle" class="stage-text">产业化</text>
+  <text x="785" y="300" text-anchor="middle" class="stage-text">Production</text>
+  
+  <!-- Production details -->
+  <text x="730" y="320" class="small-text" fill="white">• 规模化生产</text>
+  <text x="730" y="335" class="small-text" fill="white">• 质量控制</text>
+  
+  <!-- Detailed workflow boxes -->
+  
+  <!-- Discovery workflow -->
+  <rect x="50" y="220" width="180" height="200" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="8"/>
+  <text x="140" y="240" text-anchor="middle" class="step-text">基因发现详细流程</text>
+  
+  <rect x="70" y="260" width="140" height="30" fill="#3498db" rx="5"/>
+  <text x="140" y="280" text-anchor="middle" class="small-text" fill="white">1. 序列数据库搜索</text>
+  
+  <rect x="70" y="300" width="140" height="30" fill="#3498db" rx="5"/>
+  <text x="140" y="320" text-anchor="middle" class="small-text" fill="white">2. 同源性分析</text>
+  
+  <rect x="70" y="340" width="140" height="30" fill="#3498db" rx="5"/>
+  <text x="140" y="360" text-anchor="middle" class="small-text" fill="white">3. 结构域预测</text>
+  
+  <rect x="70" y="380" width="140" height="30" fill="#3498db" rx="5"/>
+  <text x="140" y="400" text-anchor="middle" class="small-text" fill="white">4. 候选基因筛选</text>
+  
+  <!-- Validation workflow -->
+  <rect x="270" y="220" width="180" height="200" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="8"/>
+  <text x="360" y="240" text-anchor="middle" class="step-text">功能验证详细流程</text>
+  
+  <rect x="290" y="260" width="140" height="30" fill="#e74c3c" rx="5"/>
+  <text x="360" y="280" text-anchor="middle" class="small-text" fill="white">1. 基因克隆</text>
+  
+  <rect x="290" y="300" width="140" height="30" fill="#e74c3c" rx="5"/>
+  <text x="360" y="320" text-anchor="middle" class="small-text" fill="white">2. 蛋白表达</text>
+  
+  <rect x="290" y="340" width="140" height="30" fill="#e74c3c" rx="5"/>
+  <text x="360" y="360" text-anchor="middle" class="small-text" fill="white">3. 酶活检测</text>
+  
+  <rect x="290" y="380" width="140" height="30" fill="#e74c3c" rx="5"/>
+  <text x="360" y="400" text-anchor="middle" class="small-text" fill="white">4. 性质表征</text>
+  
+  <!-- Engineering workflow -->
+  <rect x="490" y="220" width="180" height="200" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="8"/>
+  <text x="580" y="240" text-anchor="middle" class="step-text">工程改造详细流程</text>
+  
+  <rect x="510" y="260" width="140" height="30" fill="#f39c12" rx="5"/>
+  <text x="580" y="280" text-anchor="middle" class="small-text" fill="white">1. 结构分析</text>
+  
+  <rect x="510" y="300" width="140" height="30" fill="#f39c12" rx="5"/>
+  <text x="580" y="320" text-anchor="middle" class="small-text" fill="white">2. 突变设计</text>
+  
+  <rect x="510" y="340" width="140" height="30" fill="#f39c12" rx="5"/>
+  <text x="580" y="360" text-anchor="middle" class="small-text" fill="white">3. 高通量筛选</text>
+  
+  <rect x="510" y="380" width="140" height="30" fill="#f39c12" rx="5"/>
+  <text x="580" y="400" text-anchor="middle" class="small-text" fill="white">4. 性能优化</text>
+  
+  <!-- Key metrics -->
+  <rect x="50" y="450" width="800" height="120" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2" rx="10"/>
+  <text x="450" y="475" text-anchor="middle" class="step-text">关键评估指标</text>
+  
+  <!-- Metrics boxes -->
+  <rect x="80" y="490" width="120" height="60" fill="#17a2b8" rx="5"/>
+  <text x="140" y="515" text-anchor="middle" class="small-text" fill="white">发现效率</text>
+  <text x="140" y="530" text-anchor="middle" class="small-text" fill="white">命中率 &gt; 5%</text>
+  
+  <rect x="220" y="490" width="120" height="60" fill="#dc3545" rx="5"/>
+  <text x="280" y="515" text-anchor="middle" class="small-text" fill="white">活性水平</text>
+  <text x="280" y="530" text-anchor="middle" class="small-text" fill="white">比活 &gt; 100 U/mg</text>
+  
+  <rect x="360" y="490" width="120" height="60" fill="#fd7e14" rx="5"/>
+  <text x="420" y="515" text-anchor="middle" class="small-text" fill="white">稳定性</text>
+  <text x="420" y="530" text-anchor="middle" class="small-text" fill="white">半衰期 &gt; 24h</text>
+  
+  <rect x="500" y="490" width="120" height="60" fill="#28a745" rx="5"/>
+  <text x="560" y="515" text-anchor="middle" class="small-text" fill="white">产量</text>
+  <text x="560" y="530" text-anchor="middle" class="small-text" fill="white">&gt; 1 g/L</text>
+  
+  <rect x="640" y="490" width="120" height="60" fill="#6f42c1" rx="5"/>
+  <text x="700" y="515" text-anchor="middle" class="small-text" fill="white">成本效益</text>
+  <text x="700" y="530" text-anchor="middle" class="small-text" fill="white">ROI &gt; 300%</text>
+  
+  <!-- Feedback loops -->
+  <path d="M 345 180 Q 345 200 125 200 Q 125 180 125 180" class="feedback-arrow"/>
+  <text x="235" y="195" text-anchor="middle" class="small-text" fill="#e67e22">重新筛选</text>
+  
+  <path d="M 565 180 Q 565 200 345 200 Q 345 180 345 180" class="feedback-arrow"/>
+  <text x="455" y="195" text-anchor="middle" class="small-text" fill="#e67e22">重新验证</text>
+  
+  <path d="M 785 250 Q 800 230 800 200 Q 800 180 565 180" class="feedback-arrow"/>
+  <text x="680" y="195" text-anchor="middle" class="small-text" fill="#e67e22">重新设计</text>
+  
+  <!-- Timeline -->
+  <text x="50" y="600" class="step-text">典型开发周期:</text>
+  <text x="50" y="620" class="small-text">基因发现: 3-6个月</text>
+  <text x="200" y="620" class="small-text">功能验证: 6-12个月</text>
+  <text x="350" y="620" class="small-text">工程改造: 12-24个月</text>
+  <text x="500" y="620" class="small-text">工艺开发: 18-36个月</text>
+  <text x="650" y="620" class="small-text">产业化: 24-48个月</text>
+  
+  <!-- Success factors -->
+  <text x="50" y="660" class="step-text">成功关键因素:</text>
+  <text x="50" y="680" class="small-text">• 多学科团队协作  • 高通量筛选平台  • 完善的质量体系  • 充足的资金支持</text>
+</svg>

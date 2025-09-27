@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .gene-text { font-family: Arial, sans-serif; font-size: 12px; fill: white; font-weight: bold; }
+      .label-text { font-family: Arial, sans-serif; font-size: 14px; fill: #34495e; }
+      .small-text { font-family: Arial, sans-serif; font-size: 11px; fill: #7f8c8d; }
+      .core-gene { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; }
+      .modify-gene { fill: #3498db; stroke: #2980b9; stroke-width: 2; }
+      .regulate-gene { fill: #f39c12; stroke: #e67e22; stroke-width: 2; }
+      .resist-gene { fill: #9b59b6; stroke: #8e44ad; stroke-width: 2; }
+      .transport-gene { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; }
+      .arrow { stroke: #34495e; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" class="title-text">生物合成基因簇(BGC)典型结构</text>
+  
+  <!-- Genome line -->
+  <line x1="50" y1="200" x2="850" y2="200" stroke="#34495e" stroke-width="3"/>
+  
+  <!-- Gene arrows (representing genes) -->
+  
+  <!-- Regulatory gene 1 -->
+  <polygon points="80,170 80,230 140,230 150,200 140,170" class="regulate-gene"/>
+  <text x="115" y="205" text-anchor="middle" class="gene-text">regA</text>
+  
+  <!-- Core biosynthetic genes -->
+  <polygon points="170,160 170,240 250,240 260,200 250,160" class="core-gene"/>
+  <text x="215" y="205" text-anchor="middle" class="gene-text">pksA</text>
+  
+  <polygon points="280,160 280,240 360,240 370,200 360,160" class="core-gene"/>
+  <text x="325" y="205" text-anchor="middle" class="gene-text">nrpsB</text>
+  
+  <!-- Modification genes -->
+  <polygon points="390,170 390,230 450,230 460,200 450,170" class="modify-gene"/>
+  <text x="425" y="205" text-anchor="middle" class="gene-text">oxyC</text>
+  
+  <polygon points="480,170 480,230 540,230 550,200 540,170" class="modify-gene"/>
+  <text x="515" y="205" text-anchor="middle" class="gene-text">metD</text>
+  
+  <!-- Resistance gene -->
+  <polygon points="570,170 570,230 630,230 640,200 630,170" class="resist-gene"/>
+  <text x="605" y="205" text-anchor="middle" class="gene-text">resE</text>
+  
+  <!-- Transport gene -->
+  <polygon points="660,170 660,230 720,230 730,200 720,170" class="transport-gene"/>
+  <text x="695" y="205" text-anchor="middle" class="gene-text">tranF</text>
+  
+  <!-- Regulatory gene 2 -->
+  <polygon points="750,170 750,230 810,230 820,200 810,170" class="regulate-gene"/>
+  <text x="785" y="205" text-anchor="middle" class="gene-text">regG</text>
+  
+  <!-- Labels and descriptions -->
+  <text x="115" y="130" text-anchor="middle" class="label-text">转录调控</text>
+  <text x="115" y="145" text-anchor="middle" class="small-text">激活子/阻遏子</text>
+  
+  <text x="295" y="120" text-anchor="middle" class="label-text">骨架合成酶</text>
+  <text x="295" y="135" text-anchor="middle" class="small-text">PKS/NRPS</text>
+  
+  <text x="470" y="130" text-anchor="middle" class="label-text">修饰酶</text>
+  <text x="470" y="145" text-anchor="middle" class="small-text">氧化/甲基化</text>
+  
+  <text x="605" y="130" text-anchor="middle" class="label-text">抗性基因</text>
+  <text x="605" y="145" text-anchor="middle" class="small-text">自我保护</text>
+  
+  <text x="695" y="130" text-anchor="middle" class="label-text">转运基因</text>
+  <text x="695" y="145" text-anchor="middle" class="small-text">产物外排</text>
+  
+  <text x="785" y="130" text-anchor="middle" class="label-text">转录调控</text>
+  <text x="785" y="145" text-anchor="middle" class="small-text">精细调节</text>
+  
+  <!-- Arrows showing gene expression flow -->
+  <line x1="115" y1="250" x2="295" y2="250" class="arrow"/>
+  <text x="205" y="270" text-anchor="middle" class="small-text">转录激活</text>
+  
+  <!-- Product synthesis pathway -->
+  <rect x="50" y="320" width="800" height="120" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="10"/>
+  <text x="450" y="345" text-anchor="middle" class="label-text">产物合成途径</text>
+  
+  <!-- Pathway steps -->
+  <rect x="80" y="360" width="80" height="40" fill="#e74c3c" rx="5"/>
+  <text x="120" y="385" text-anchor="middle" class="gene-text">前体合成</text>
+  
+  <line x1="160" y1="380" x2="200" y2="380" class="arrow"/>
+  
+  <rect x="220" y="360" width="80" height="40" fill="#e74c3c" rx="5"/>
+  <text x="260" y="385" text-anchor="middle" class="gene-text">骨架组装</text>
+  
+  <line x1="300" y1="380" x2="340" y2="380" class="arrow"/>
+  
+  <rect x="360" y="360" width="80" height="40" fill="#3498db" rx="5"/>
+  <text x="400" y="385" text-anchor="middle" class="gene-text">结构修饰</text>
+  
+  <line x1="440" y1="380" x2="480" y2="380" class="arrow"/>
+  
+  <rect x="500" y="360" width="80" height="40" fill="#2ecc71" rx="5"/>
+  <text x="540" y="385" text-anchor="middle" class="gene-text">产物外排</text>
+  
+  <line x1="580" y1="380" x2="620" y2="380" class="arrow"/>
+  
+  <rect x="640" y="360" width="80" height="40" fill="#f39c12" rx="5"/>
+  <text x="680" y="385" text-anchor="middle" class="gene-text">最终产物</text>
+  
+  <!-- Resistance mechanism -->
+  <rect x="750" y="360" width="80" height="40" fill="#9b59b6" rx="5"/>
+  <text x="790" y="385" text-anchor="middle" class="gene-text">抗性保护</text>
+  
+  <!-- Legend -->
+  <text x="50" y="480" class="label-text">基因类型:</text>
+  
+  <rect x="150" y="465" width="20" height="15" class="core-gene"/>
+  <text x="180" y="477" class="small-text">核心合成基因</text>
+  
+  <rect x="280" y="465" width="20" height="15" class="modify-gene"/>
+  <text x="310" y="477" class="small-text">修饰基因</text>
+  
+  <rect x="400" y="465" width="20" height="15" class="regulate-gene"/>
+  <text x="430" y="477" class="small-text">调控基因</text>
+  
+  <rect x="520" y="465" width="20" height="15" class="resist-gene"/>
+  <text x="550" y="477" class="small-text">抗性基因</text>
+  
+  <rect x="640" y="465" width="20" height="15" class="transport-gene"/>
+  <text x="670" y="477" class="small-text">转运基因</text>
+</svg>

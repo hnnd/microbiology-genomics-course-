@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2d3748; }
+      .label { font-family: Arial, sans-serif; font-size: 12px; fill: #4a5568; }
+      .stem { stroke: #3182ce; stroke-width: 3; fill: none; }
+      .loop { stroke: #e53e3e; stroke-width: 3; fill: none; }
+      .acceptor { stroke: #38a169; stroke-width: 4; fill: none; }
+      .anticodon { stroke: #d69e2e; stroke-width: 4; fill: none; }
+      .base-pair { stroke: #718096; stroke-width: 1; }
+      .nucleotide { font-family: monospace; font-size: 10px; fill: #2d3748; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="250" y="30" class="title" text-anchor="middle">tRNA二级结构（三叶草模型）</text>
+  
+  <!-- Acceptor Stem -->
+  <line x1="250" y1="60" x2="250" y2="140" class="acceptor"/>
+  <text x="260" y="100" class="label">受体茎</text>
+  <text x="260" y="115" class="label">(7bp)</text>
+  
+  <!-- 5' and 3' ends -->
+  <circle cx="250" cy="60" r="8" fill="#38a169"/>
+  <text x="250" y="65" class="nucleotide" text-anchor="middle">5'</text>
+  <circle cx="250" cy="140" r="8" fill="#38a169"/>
+  <text x="250" y="145" class="nucleotide" text-anchor="middle">3'</text>
+  
+  <!-- D Arm -->
+  <path d="M 250 140 Q 180 160 150 200 Q 120 240 150 280 Q 180 320 250 300" class="stem"/>
+  <circle cx="120" cy="240" r="15" fill="none" stroke="#e53e3e" stroke-width="2"/>
+  <text x="120" y="245" class="nucleotide" text-anchor="middle">D</text>
+  <text x="80" y="240" class="label">D环</text>
+  <text x="80" y="255" class="label">(7-11nt)</text>
+  
+  <!-- Anticodon Arm -->
+  <path d="M 250 300 L 250 380 Q 220 420 180 420 Q 140 420 110 420 Q 140 420 180 420 Q 220 420 250 380" class="stem"/>
+  <path d="M 110 420 Q 110 450 140 450 Q 170 450 180 420" class="anticodon"/>
+  <text x="140" y="470" class="label" text-anchor="middle">反密码子环</text>
+  <text x="140" y="485" class="label" text-anchor="middle">(7nt)</text>
+  
+  <!-- Anticodon triplet -->
+  <circle cx="120" cy="450" r="6" fill="#d69e2e"/>
+  <circle cx="140" cy="450" r="6" fill="#d69e2e"/>
+  <circle cx="160" cy="450" r="6" fill="#d69e2e"/>
+  <text x="140" y="500" class="nucleotide" text-anchor="middle">反密码子</text>
+  
+  <!-- TψC Arm -->
+  <path d="M 250 300 Q 320 320 350 280 Q 380 240 350 200 Q 320 160 250 140" class="stem"/>
+  <circle cx="380" cy="240" r="15" fill="none" stroke="#e53e3e" stroke-width="2"/>
+  <text x="380" y="245" class="nucleotide" text-anchor="middle">TψC</text>
+  <text x="400" y="240" class="label">TψC环</text>
+  <text x="400" y="255" class="label">(7nt)</text>
+  
+  <!-- Variable Loop -->
+  <path d="M 350 200 Q 380 180 400 200 Q 420 220 400 240 Q 380 260 350 240" class="loop"/>
+  <text x="430" y="220" class="label">可变环</text>
+  <text x="430" y="235" class="label">(4-21nt)</text>
+  
+  <!-- Base pairing lines -->
+  <line x1="240" y1="70" x2="260" y2="70" class="base-pair"/>
+  <line x1="240" y1="80" x2="260" y2="80" class="base-pair"/>
+  <line x1="240" y1="90" x2="260" y2="90" class="base-pair"/>
+  <line x1="240" y1="100" x2="260" y2="100" class="base-pair"/>
+  <line x1="240" y1="110" x2="260" y2="110" class="base-pair"/>
+  <line x1="240" y1="120" x2="260" y2="120" class="base-pair"/>
+  <line x1="240" y1="130" x2="260" y2="130" class="base-pair"/>
+  
+  <!-- Conserved nucleotides -->
+  <text x="50" y="550" class="label">保守序列特征：</text>
+  <text x="50" y="570" class="label">• D环：含二氢尿嘧啶修饰</text>
+  <text x="50" y="585" class="label">• TψC环：含假尿嘧啶修饰</text>
+  <text x="300" y="570" class="label">• 反密码子：决定氨基酸特异性</text>
+  <text x="300" y="585" class="label">• 受体茎：氨基酸结合位点</text>
+</svg>

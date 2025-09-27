@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700" height="350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="700" height="350" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="350" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    基因树与物种树冲突
+  </text>
+  
+  <!-- Species Tree (Left) -->
+  <g transform="translate(50, 50)">
+    <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">
+      物种树 (Species Tree)
+    </text>
+    
+    <!-- Tree structure -->
+    <line x1="50" y1="80" x2="50" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="50" y1="140" x2="100" y2="140" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="100" y1="80" x2="100" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="100" y1="110" x2="150" y2="80" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="100" y1="170" x2="150" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    
+    <!-- Terminal branches -->
+    <line x1="50" y1="80" x2="80" y2="80" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="50" y1="200" x2="80" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="150" y1="80" x2="180" y2="80" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="150" y1="200" x2="180" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    
+    <!-- Species labels -->
+    <text x="190" y="85" font-family="Arial, sans-serif" font-size="12" fill="#333">A</text>
+    <text x="90" y="85" font-family="Arial, sans-serif" font-size="12" fill="#333">B</text>
+    <text x="90" y="205" font-family="Arial, sans-serif" font-size="12" fill="#333">C</text>
+    <text x="190" y="205" font-family="Arial, sans-serif" font-size="12" fill="#333">D</text>
+    
+    <!-- Topology label -->
+    <text x="100" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+      拓扑: ((A,B),(C,D))
+    </text>
+  </g>
+  
+  <!-- Gene Tree (Right) -->
+  <g transform="translate(400, 50)">
+    <text x="100" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">
+      基因树 (Gene Tree)
+    </text>
+    
+    <!-- Tree structure - different topology -->
+    <line x1="50" y1="80" x2="50" y2="200" stroke="#D32F2F" stroke-width="3"/>
+    <line x1="50" y1="140" x2="100" y2="140" stroke="#D32F2F" stroke-width="3"/>
+    <line x1="100" y1="80" x2="100" y2="200" stroke="#D32F2F" stroke-width="3"/>
+    <line x1="100" y1="110" x2="150" y2="80" stroke="#D32F2F" stroke-width="3"/>
+    <line x1="100" y1="170" x2="150" y2="200" stroke="#D32F2F" stroke-width="3"/>
+    
+    <!-- Terminal branches - different arrangement -->
+    <line x1="50" y1="80" x2="80" y2="80" stroke="#D32F2F" stroke-width="3"/>
+    <line x1="50" y1="200" x2="80" y2="200" stroke="#D32F2F" stroke-width="3"/>
+    <line x1="150" y1="80" x2="180" y2="80" stroke="#D32F2F" stroke-width="3"/>
+    <line x1="150" y1="200" x2="180" y2="200" stroke="#D32F2F" stroke-width="3"/>
+    
+    <!-- Species labels - different arrangement -->
+    <text x="190" y="85" font-family="Arial, sans-serif" font-size="12" fill="#333">A</text>
+    <text x="90" y="85" font-family="Arial, sans-serif" font-size="12" fill="#333">C</text>
+    <text x="90" y="205" font-family="Arial, sans-serif" font-size="12" fill="#333">B</text>
+    <text x="190" y="205" font-family="Arial, sans-serif" font-size="12" fill="#333">D</text>
+    
+    <!-- Topology label -->
+    <text x="100" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+      拓扑: ((A,C),(B,D))
+    </text>
+  </g>
+  
+  <!-- Conflict indicator -->
+  <g transform="translate(300, 150)">
+    <circle cx="25" cy="25" r="20" fill="#FF5722" stroke="#333" stroke-width="2"/>
+    <text x="25" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">
+      ≠
+    </text>
+    <text x="25" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">
+      冲突!
+    </text>
+  </g>
+  
+  <!-- Causes of conflict -->
+  <g transform="translate(50, 280)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">
+      冲突原因:
+    </text>
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="10" fill="#666">
+      • 水平基因转移 (HGT)
+    </text>
+    <text x="200" y="20" font-family="Arial, sans-serif" font-size="10" fill="#666">
+      • 基因重复与丢失
+    </text>
+    <text x="400" y="20" font-family="Arial, sans-serif" font-size="10" fill="#666">
+      • 不完全谱系分选
+    </text>
+  </g>
+</svg>

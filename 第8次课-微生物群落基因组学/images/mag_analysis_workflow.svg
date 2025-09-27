@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; }
+      .step-text { font-family: Arial, sans-serif; font-size: 14px; fill: #34495e; }
+      .small-text { font-family: Arial, sans-serif; font-size: 12px; fill: #7f8c8d; }
+      .box { fill: #ecf0f1; stroke: #34495e; stroke-width: 2; }
+      .process-box { fill: #3498db; stroke: #2980b9; stroke-width: 2; }
+      .result-box { fill: #2ecc71; stroke: #27ae60; stroke-width: 2; }
+      .arrow { fill: none; stroke: #34495e; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title-text">MAG分析流程</text>
+  
+  <!-- Step 1: Raw Data -->
+  <rect x="50" y="80" width="120" height="60" class="box"/>
+  <text x="110" y="105" text-anchor="middle" class="step-text">宏基因组</text>
+  <text x="110" y="125" text-anchor="middle" class="step-text">原始数据</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="170" y1="110" x2="220" y2="110" class="arrow"/>
+  
+  <!-- Step 2: Assembly -->
+  <rect x="240" y="80" width="120" height="60" class="process-box"/>
+  <text x="300" y="105" text-anchor="middle" class="step-text" fill="white">序列组装</text>
+  <text x="300" y="125" text-anchor="middle" class="small-text" fill="white">contigs/scaffolds</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="360" y1="110" x2="410" y2="110" class="arrow"/>
+  
+  <!-- Step 3: Binning -->
+  <rect x="430" y="80" width="120" height="60" class="process-box"/>
+  <text x="490" y="105" text-anchor="middle" class="step-text" fill="white">序列分箱</text>
+  <text x="490" y="125" text-anchor="middle" class="small-text" fill="white">组成+丰度</text>
+  
+  <!-- Arrow 3 -->
+  <line x1="550" y1="110" x2="600" y2="110" class="arrow"/>
+  
+  <!-- Step 4: MAG Bins -->
+  <rect x="620" y="80" width="120" height="60" class="result-box"/>
+  <text x="680" y="105" text-anchor="middle" class="step-text" fill="white">MAG bins</text>
+  <text x="680" y="125" text-anchor="middle" class="small-text" fill="white">候选基因组</text>
+  
+  <!-- Arrow down -->
+  <line x1="680" y1="140" x2="680" y2="190" class="arrow"/>
+  
+  <!-- Step 5: Quality Assessment -->
+  <rect x="620" y="210" width="120" height="60" class="process-box"/>
+  <text x="680" y="235" text-anchor="middle" class="step-text" fill="white">质量评估</text>
+  <text x="680" y="255" text-anchor="middle" class="small-text" fill="white">CheckM/BUSCO</text>
+  
+  <!-- Arrow left -->
+  <line x1="620" y1="240" x2="570" y2="240" class="arrow"/>
+  
+  <!-- Step 6: Refinement -->
+  <rect x="430" y="210" width="120" height="60" class="process-box"/>
+  <text x="490" y="235" text-anchor="middle" class="step-text" fill="white">基因组精化</text>
+  <text x="490" y="255" text-anchor="middle" class="small-text" fill="white">去污染/补完</text>
+  
+  <!-- Arrow left -->
+  <line x1="430" y1="240" x2="380" y2="240" class="arrow"/>
+  
+  <!-- Step 7: Taxonomy -->
+  <rect x="240" y="210" width="120" height="60" class="process-box"/>
+  <text x="300" y="235" text-anchor="middle" class="step-text" fill="white">物种注释</text>
+  <text x="300" y="255" text-anchor="middle" class="small-text" fill="white">GTDB-Tk</text>
+  
+  <!-- Arrow left -->
+  <line x1="240" y1="240" x2="190" y2="240" class="arrow"/>
+  
+  <!-- Step 8: Function -->
+  <rect x="50" y="210" width="120" height="60" class="process-box"/>
+  <text x="110" y="235" text-anchor="middle" class="step-text" fill="white">功能注释</text>
+  <text x="110" y="255" text-anchor="middle" class="small-text" fill="white">基因预测</text>
+  
+  <!-- Arrow down -->
+  <line x1="110" y1="270" x2="110" y2="320" class="arrow"/>
+  
+  <!-- Final Result -->
+  <rect x="50" y="340" width="680" height="80" class="result-box"/>
+  <text x="390" y="370" text-anchor="middle" class="title-text" fill="white">高质量MAG基因组</text>
+  <text x="200" y="395" text-anchor="middle" class="step-text" fill="white">• 完整性 ≥ 90%</text>
+  <text x="390" y="395" text-anchor="middle" class="step-text" fill="white">• 污染率 ≤ 5%</text>
+  <text x="580" y="395" text-anchor="middle" class="step-text" fill="white">• 功能完整</text>
+  
+  <!-- Quality metrics -->
+  <rect x="50" y="450" width="200" height="100" class="box"/>
+  <text x="150" y="475" text-anchor="middle" class="step-text">质量指标</text>
+  <text x="70" y="495" class="small-text">• 完整性 (Completeness)</text>
+  <text x="70" y="510" class="small-text">• 污染率 (Contamination)</text>
+  <text x="70" y="525" class="small-text">• 应变异质性 (Strain heterogeneity)</text>
+  <text x="70" y="540" class="small-text">• N50/L50</text>
+  
+  <!-- Tools -->
+  <rect x="300" y="450" width="200" height="100" class="box"/>
+  <text x="400" y="475" text-anchor="middle" class="step-text">常用工具</text>
+  <text x="320" y="495" class="small-text">• MetaBAT2, MaxBin2</text>
+  <text x="320" y="510" class="small-text">• CONCOCT, GroopM</text>
+  <text x="320" y="525" class="small-text">• CheckM, BUSCO</text>
+  <text x="320" y="540" class="small-text">• GTDB-Tk, Prokka</text>
+  
+  <!-- Applications -->
+  <rect x="550" y="450" width="200" height="100" class="box"/>
+  <text x="650" y="475" text-anchor="middle" class="step-text">应用领域</text>
+  <text x="570" y="495" class="small-text">• 新物种发现</text>
+  <text x="570" y="510" class="small-text">• 代谢重建</text>
+  <text x="570" y="525" class="small-text">• 进化分析</text>
+  <text x="570" y="540" class="small-text">• 功能预测</text>
+</svg>

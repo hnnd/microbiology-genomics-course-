@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #2c3e50; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #34495e; }
+      .label { font-family: Arial, sans-serif; font-size: 11px; fill: #2c3e50; }
+      .population { fill: #3498db; stroke: #2980b9; stroke-width: 2; }
+      .population-alt { fill: #e74c3c; stroke: #c0392b; stroke-width: 2; }
+      .population-special { fill: #f39c12; stroke: #e67e22; stroke-width: 2; }
+      .flow-arrow { stroke: #27ae60; stroke-width: 3; fill: none; marker-end: url(#flowhead); }
+      .barrier { stroke: #7f8c8d; stroke-width: 4; fill: none; stroke-dasharray: 5,5; }
+    </style>
+    <marker id="flowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#27ae60" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">种群基因流动模式</text>
+  
+  <!-- Island Model -->
+  <text x="50" y="60" class="subtitle">1. 岛屿模型 (Island Model)</text>
+  
+  <!-- Central population -->
+  <circle cx="200" cy="120" r="25" class="population"/>
+  <text x="200" y="125" text-anchor="middle" class="label" fill="white">中心种群</text>
+  
+  <!-- Peripheral populations -->
+  <circle cx="120" cy="80" r="20" class="population-alt"/>
+  <text x="120" y="85" text-anchor="middle" class="label" fill="white">种群A</text>
+  
+  <circle cx="280" cy="80" r="20" class="population-alt"/>
+  <text x="280" y="85" text-anchor="middle" class="label" fill="white">种群B</text>
+  
+  <circle cx="120" cy="160" r="20" class="population-alt"/>
+  <text x="120" y="165" text-anchor="middle" class="label" fill="white">种群C</text>
+  
+  <circle cx="280" cy="160" r="20" class="population-alt"/>
+  <text x="280" y="165" text-anchor="middle" class="label" fill="white">种群D</text>
+  
+  <!-- Gene flow arrows -->
+  <line x1="140" y1="90" x2="180" y2="110" class="flow-arrow"/>
+  <line x1="260" y1="90" x2="220" y2="110" class="flow-arrow"/>
+  <line x1="140" y1="150" x2="180" y2="130" class="flow-arrow"/>
+  <line x1="260" y1="150" x2="220" y2="130" class="flow-arrow"/>
+  
+  <!-- Stepping Stone Model -->
+  <text x="400" y="60" class="subtitle">2. 踏脚石模型 (Stepping Stone Model)</text>
+  
+  <!-- Linear populations -->
+  <circle cx="420" cy="120" r="20" class="population"/>
+  <text x="420" y="125" text-anchor="middle" class="label" fill="white">种群1</text>
+  
+  <circle cx="480" cy="120" r="20" class="population"/>
+  <text x="480" y="125" text-anchor="middle" class="label" fill="white">种群2</text>
+  
+  <circle cx="540" cy="120" r="20" class="population"/>
+  <text x="540" y="125" text-anchor="middle" class="label" fill="white">种群3</text>
+  
+  <circle cx="600" cy="120" r="20" class="population"/>
+  <text x="600" y="125" text-anchor="middle" class="label" fill="white">种群4</text>
+  
+  <circle cx="660" cy="120" r="20" class="population"/>
+  <text x="660" y="125" text-anchor="middle" class="label" fill="white">种群5</text>
+  
+  <!-- Adjacent gene flow -->
+  <line x1="440" y1="120" x2="460" y2="120" class="flow-arrow"/>
+  <line x1="500" y1="120" x2="520" y2="120" class="flow-arrow"/>
+  <line x1="560" y1="120" x2="580" y2="120" class="flow-arrow"/>
+  <line x1="620" y1="120" x2="640" y2="120" class="flow-arrow"/>
+  
+  <!-- Isolation by Distance -->
+  <text x="50" y="220" class="subtitle">3. 隔离距离模型 (Isolation by Distance)</text>
+  
+  <!-- Populations with distance -->
+  <circle cx="100" cy="280" r="20" class="population"/>
+  <text x="100" y="285" text-anchor="middle" class="label" fill="white">种群A</text>
+  
+  <circle cx="200" cy="280" r="20" class="population"/>
+  <text x="200" y="285" text-anchor="middle" class="label" fill="white">种群B</text>
+  
+  <circle cx="350" cy="280" r="20" class="population"/>
+  <text x="350" y="285" text-anchor="middle" class="label" fill="white">种群C</text>
+  
+  <circle cx="550" cy="280" r="20" class="population"/>
+  <text x="550" y="285" text-anchor="middle" class="label" fill="white">种群D</text>
+  
+  <!-- Distance-dependent gene flow -->
+  <line x1="120" y1="280" x2="180" y2="280" class="flow-arrow" stroke-width="4"/>
+  <text x="150" y="270" text-anchor="middle" class="label" style="font-size: 10px;">强基因流</text>
+  
+  <line x1="220" y1="280" x2="330" y2="280" class="flow-arrow" stroke-width="2"/>
+  <text x="275" y="270" text-anchor="middle" class="label" style="font-size: 10px;">中等基因流</text>
+  
+  <line x1="370" y1="280" x2="530" y2="280" class="flow-arrow" stroke-width="1"/>
+  <text x="450" y="270" text-anchor="middle" class="label" style="font-size: 10px;">弱基因流</text>
+  
+  <!-- Geographic barriers -->
+  <text x="400" y="220" class="subtitle">4. 地理屏障影响</text>
+  
+  <!-- Populations separated by barrier -->
+  <circle cx="450" cy="280" r="20" class="population-alt"/>
+  <text x="450" y="285" text-anchor="middle" class="label" fill="white">种群X</text>
+  
+  <circle cx="650" cy="280" r="20" class="population-special"/>
+  <text x="650" y="285" text-anchor="middle" class="label" fill="white">种群Y</text>
+  
+  <!-- Geographic barrier -->
+  <line x1="520" y1="250" x2="520" y2="310" class="barrier"/>
+  <line x1="530" y1="250" x2="530" y2="310" class="barrier"/>
+  <text x="525" y="240" text-anchor="middle" class="label" style="font-size: 10px;">地理屏障</text>
+  <text x="525" y="325" text-anchor="middle" class="label" style="font-size: 10px;">(山脉/海洋)</text>
+  
+  <!-- Blocked gene flow -->
+  <line x1="470" y1="280" x2="510" y2="280" stroke="#e74c3c" stroke-width="3" fill="none"/>
+  <text x="490" y="270" text-anchor="middle" class="label" style="font-size: 10px; fill: #e74c3c;">基因流阻断</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="340" width="700" height="50" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="4"/>
+  <text x="60" y="360" class="subtitle">模型特点：</text>
+  <text x="60" y="375" class="label">• 岛屿模型：各种群与中心种群均等交流  • 踏脚石模型：仅相邻种群间有基因流动</text>
+  <text x="60" y="385" class="label">• 隔离距离：基因流强度与地理距离负相关  • 地理屏障：物理障碍阻断基因交流</text>
+</svg>

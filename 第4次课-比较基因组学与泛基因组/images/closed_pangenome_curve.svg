@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #2c3e50; }
+      .label { font-family: Arial, sans-serif; font-size: 12px; fill: #2c3e50; }
+      .axis-label { font-family: Arial, sans-serif; font-size: 14px; fill: #2c3e50; }
+      .axis { stroke: #34495e; stroke-width: 2; }
+      .grid { stroke: #bdc3c7; stroke-width: 0.5; stroke-dasharray: 3,3; }
+      .closed-curve { stroke: #e74c3c; stroke-width: 4; fill: none; }
+      .open-curve { stroke: #3498db; stroke-width: 4; fill: none; }
+      .core-curve { stroke: #2ecc71; stroke-width: 3; fill: none; }
+      .point { fill: #34495e; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" class="title">泛基因组增长曲线：开放 vs 封闭</text>
+  
+  <!-- Axes -->
+  <line x1="80" y1="350" x2="80" y2="80" class="axis"/>
+  <line x1="80" y1="350" x2="550" y2="350" class="axis"/>
+  
+  <!-- Grid lines -->
+  <line x1="80" y1="320" x2="550" y2="320" class="grid"/>
+  <line x1="80" y1="290" x2="550" y2="290" class="grid"/>
+  <line x1="80" y1="260" x2="550" y2="260" class="grid"/>
+  <line x1="80" y1="230" x2="550" y2="230" class="grid"/>
+  <line x1="80" y1="200" x2="550" y2="200" class="grid"/>
+  <line x1="80" y1="170" x2="550" y2="170" class="grid"/>
+  <line x1="80" y1="140" x2="550" y2="140" class="grid"/>
+  <line x1="80" y1="110" x2="550" y2="110" class="grid"/>
+  
+  <line x1="130" y1="350" x2="130" y2="80" class="grid"/>
+  <line x1="180" y1="350" x2="180" y2="80" class="grid"/>
+  <line x1="230" y1="350" x2="230" y2="80" class="grid"/>
+  <line x1="280" y1="350" x2="280" y2="80" class="grid"/>
+  <line x1="330" y1="350" x2="330" y2="80" class="grid"/>
+  <line x1="380" y1="350" x2="380" y2="80" class="grid"/>
+  <line x1="430" y1="350" x2="430" y2="80" class="grid"/>
+  <line x1="480" y1="350" x2="480" y2="80" class="grid"/>
+  <line x1="530" y1="350" x2="530" y2="80" class="grid"/>
+  
+  <!-- Axis labels -->
+  <text x="315" y="380" text-anchor="middle" class="axis-label">基因组数量 (n)</text>
+  <text x="40" y="215" text-anchor="middle" class="axis-label" transform="rotate(-90 40 215)">基因数量 (N)</text>
+  
+  <!-- X-axis tick labels -->
+  <text x="80" y="370" text-anchor="middle" class="label">0</text>
+  <text x="130" y="370" text-anchor="middle" class="label">5</text>
+  <text x="180" y="370" text-anchor="middle" class="label">10</text>
+  <text x="230" y="370" text-anchor="middle" class="label">15</text>
+  <text x="280" y="370" text-anchor="middle" class="label">20</text>
+  <text x="330" y="370" text-anchor="middle" class="label">25</text>
+  <text x="380" y="370" text-anchor="middle" class="label">30</text>
+  <text x="430" y="370" text-anchor="middle" class="label">35</text>
+  <text x="480" y="370" text-anchor="middle" class="label">40</text>
+  <text x="530" y="370" text-anchor="middle" class="label">45</text>
+  
+  <!-- Y-axis tick labels -->
+  <text x="70" y="355" text-anchor="end" class="label">0</text>
+  <text x="70" y="320" text-anchor="end" class="label">2000</text>
+  <text x="70" y="290" text-anchor="end" class="label">4000</text>
+  <text x="70" y="260" text-anchor="end" class="label">6000</text>
+  <text x="70" y="230" text-anchor="end" class="label">8000</text>
+  <text x="70" y="200" text-anchor="end" class="label">10000</text>
+  <text x="70" y="170" text-anchor="end" class="label">12000</text>
+  <text x="70" y="140" text-anchor="end" class="label">14000</text>
+  <text x="70" y="110" text-anchor="end" class="label">16000</text>
+  
+  <!-- Open pangenome curve (γ ≥ 1) -->
+  <polyline points="80,350 130,280 180,230 230,190 280,160 330,135 380,115 430,100 480,90 530,85" 
+            class="open-curve"/>
+  
+  <!-- Closed pangenome curve (γ < 1) -->
+  <polyline points="80,350 130,290 180,250 230,220 280,200 330,185 380,175 430,170 480,168 530,167" 
+            class="closed-curve"/>
+  
+  <!-- Core genome curve -->
+  <polyline points="80,350 130,310 180,285 230,270 280,260 330,255 380,252 430,250 480,249 530,248" 
+            class="core-curve"/>
+  
+  <!-- Data points -->
+  <circle cx="130" cy="280" r="3" class="point"/>
+  <circle cx="180" cy="230" r="3" class="point"/>
+  <circle cx="230" cy="190" r="3" class="point"/>
+  <circle cx="280" cy="160" r="3" class="point"/>
+  <circle cx="330" cy="135" r="3" class="point"/>
+  <circle cx="380" cy="115" r="3" class="point"/>
+  
+  <circle cx="130" cy="290" r="3" class="point"/>
+  <circle cx="180" cy="250" r="3" class="point"/>
+  <circle cx="230" cy="220" r="3" class="point"/>
+  <circle cx="280" cy="200" r="3" class="point"/>
+  <circle cx="330" cy="185" r="3" class="point"/>
+  <circle cx="380" cy="175" r="3" class="point"/>
+  
+  <!-- Legend -->
+  <rect x="350" y="100" width="200" height="120" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="4"/>
+  <text x="360" y="120" class="label" font-weight="bold">泛基因组类型</text>
+  
+  <line x1="370" y1="135" x2="400" y2="135" class="open-curve"/>
+  <text x="410" y="140" class="label">开放泛基因组 (γ &gt;= 1)</text>
+  <text x="410" y="155" class="label" style="font-size: 10px;">持续增长，如 E. coli</text>
+  
+  <line x1="370" y1="170" x2="400" y2="170" class="closed-curve"/>
+  <text x="410" y="175" class="label">封闭泛基因组 (γ &lt; 1)</text>
+  <text x="410" y="190" class="label" style="font-size: 10px;">趋于饱和，如 Mycoplasma</text>
+  
+  <line x1="370" y1="205" x2="400" y2="205" class="core-curve"/>
+  <text x="410" y="210" class="label">核心基因组</text>
+  
+  <!-- Mathematical formulas -->
+  <text x="100" y="60" class="label" font-weight="bold">Heap定律: N = κ × n^γ</text>
+  <text x="350" y="60" class="label">γ &lt; 1: 封闭</text>
+  <text x="450" y="60" class="label">γ &gt;= 1: 开放</text>
+</svg>

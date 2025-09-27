@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="400" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    系统发育网络 vs 树形结构
+  </text>
+  
+  <!-- Tree structure (Left) -->
+  <g transform="translate(50, 50)">
+    <text x="80" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+      传统树形结构
+    </text>
+    
+    <!-- Tree branches -->
+    <line x1="40" y1="80" x2="40" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="40" y1="140" x2="80" y2="140" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="80" y1="80" x2="80" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="80" y1="110" x2="120" y2="80" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="80" y1="170" x2="120" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    
+    <!-- Terminal branches -->
+    <line x1="40" y1="80" x2="60" y2="80" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="40" y1="200" x2="60" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="120" y1="80" x2="140" y2="80" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="120" y1="200" x2="140" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    
+    <!-- Species labels -->
+    <text x="150" y="85" font-family="Arial, sans-serif" font-size="10" fill="#333">A</text>
+    <text x="70" y="85" font-family="Arial, sans-serif" font-size="10" fill="#333">B</text>
+    <text x="70" y="205" font-family="Arial, sans-serif" font-size="10" fill="#333">C</text>
+    <text x="150" y="205" font-family="Arial, sans-serif" font-size="10" fill="#333">D</text>
+    
+    <!-- Limitation note -->
+    <text x="80" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">
+      仅表示垂直遗传
+    </text>
+  </g>
+  
+  <!-- Network structure (Right) -->
+  <g transform="translate(280, 50)">
+    <text x="80" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+      系统发育网络
+    </text>
+    
+    <!-- Network nodes -->
+    <circle cx="40" cy="80" r="4" fill="#1976D2"/>
+    <circle cx="40" cy="200" r="4" fill="#1976D2"/>
+    <circle cx="80" cy="140" r="4" fill="#1976D2"/>
+    <circle cx="120" cy="80" r="4" fill="#1976D2"/>
+    <circle cx="120" cy="200" r="4" fill="#1976D2"/>
+    
+    <!-- Vertical inheritance (solid lines) -->
+    <line x1="40" y1="80" x2="40" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="40" y1="140" x2="80" y2="140" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="80" y1="140" x2="120" y2="80" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="80" y1="140" x2="120" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    
+    <!-- Horizontal gene transfer (dashed lines) -->
+    <line x1="40" y1="120" x2="120" y2="120" stroke="#FF5722" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="60" y1="80" x2="100" y2="200" stroke="#FF5722" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Terminal branches -->
+    <line x1="40" y1="80" x2="60" y2="80" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="40" y1="200" x2="60" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="120" y1="80" x2="140" y2="80" stroke="#2E7D32" stroke-width="3"/>
+    <line x1="120" y1="200" x2="140" y2="200" stroke="#2E7D32" stroke-width="3"/>
+    
+    <!-- Species labels -->
+    <text x="150" y="85" font-family="Arial, sans-serif" font-size="10" fill="#333">A</text>
+    <text x="70" y="85" font-family="Arial, sans-serif" font-size="10" fill="#333">B</text>
+    <text x="70" y="205" font-family="Arial, sans-serif" font-size="10" fill="#333">C</text>
+    <text x="150" y="205" font-family="Arial, sans-serif" font-size="10" fill="#333">D</text>
+    
+    <!-- Advantage note -->
+    <text x="80" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">
+      包含水平基因转移
+    </text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 300)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">
+      图例:
+    </text>
+    
+    <!-- Vertical inheritance -->
+    <line x1="0" y1="20" x2="30" y2="20" stroke="#2E7D32" stroke-width="3"/>
+    <text x="40" y="25" font-family="Arial, sans-serif" font-size="10" fill="#333">
+      垂直遗传
+    </text>
+    
+    <!-- Horizontal gene transfer -->
+    <line x1="120" y1="20" x2="150" y2="20" stroke="#FF5722" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="160" y="25" font-family="Arial, sans-serif" font-size="10" fill="#333">
+      水平基因转移
+    </text>
+    
+    <!-- Network advantages -->
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="10" fill="#333" font-weight="bold">
+      网络结构优势:
+    </text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="9" fill="#666">
+      • 表示复杂进化关系  • 整合HGT信息  • 更真实的进化图景
+    </text>
+  </g>
+</svg>

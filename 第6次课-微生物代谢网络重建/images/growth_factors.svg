@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="650" height="450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="650" height="450" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- 标题 -->
+  <text x="325" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#212529">生长因子合成通路</text>
+  
+  <!-- 维生素B类 -->
+  <rect x="50" y="60" width="150" height="30" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="125" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1976d2">B族维生素</text>
+  
+  <!-- 维生素B1 (硫胺素) -->
+  <rect x="30" y="110" width="80" height="25" fill="#e1f5fe" stroke="#0277bd" stroke-width="2" rx="3"/>
+  <text x="70" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277bd">维生素B1</text>
+  
+  <circle cx="70" cy="160" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="70" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">ThiC</text>
+  
+  <circle cx="70" cy="200" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="70" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">ThiD</text>
+  
+  <circle cx="70" cy="240" r="15" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="70" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c">TPP</text>
+  
+  <!-- 维生素B2 (核黄素) -->
+  <rect x="130" y="110" width="80" height="25" fill="#e1f5fe" stroke="#0277bd" stroke-width="2" rx="3"/>
+  <text x="170" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277bd">维生素B2</text>
+  
+  <circle cx="170" cy="160" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="170" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">RibA</text>
+  
+  <circle cx="170" cy="200" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="170" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">RibB</text>
+  
+  <circle cx="170" cy="240" r="15" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="170" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c">FAD</text>
+  
+  <!-- 维生素B6 (吡哆醇) -->
+  <rect x="230" y="110" width="80" height="25" fill="#e1f5fe" stroke="#0277bd" stroke-width="2" rx="3"/>
+  <text x="270" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277bd">维生素B6</text>
+  
+  <circle cx="270" cy="160" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="270" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">PdxA</text>
+  
+  <circle cx="270" cy="200" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="270" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">PdxJ</text>
+  
+  <circle cx="270" cy="240" r="15" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="270" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c">PLP</text>
+  
+  <!-- 维生素B12 (钴胺素) -->
+  <rect x="330" y="110" width="80" height="25" fill="#e1f5fe" stroke="#0277bd" stroke-width="2" rx="3"/>
+  <text x="370" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0277bd">维生素B12</text>
+  
+  <circle cx="350" cy="160" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="350" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">CobA</text>
+  
+  <circle cx="390" cy="160" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="390" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">CobB</text>
+  
+  <circle cx="370" cy="200" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="370" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">CobC</text>
+  
+  <circle cx="370" cy="240" r="15" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="370" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c">B12</text>
+  
+  <!-- 其他重要辅因子 -->
+  <rect x="450" y="60" width="150" height="30" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="5"/>
+  <text x="525" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c2185b">其他辅因子</text>
+  
+  <!-- 生物素 -->
+  <rect x="430" y="110" width="70" height="25" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="3"/>
+  <text x="465" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7b1fa2">生物素</text>
+  
+  <circle cx="465" cy="160" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="465" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">BioA</text>
+  
+  <circle cx="465" cy="200" r="15" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="465" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c">Biotin</text>
+  
+  <!-- 叶酸 -->
+  <rect x="520" y="110" width="70" height="25" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="3"/>
+  <text x="555" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7b1fa2">叶酸</text>
+  
+  <circle cx="555" cy="160" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="555" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">FolA</text>
+  
+  <circle cx="555" cy="200" r="15" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="555" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c">THF</text>
+  
+  <!-- 血红素合成 -->
+  <rect x="100" y="290" width="120" height="30" fill="#ffebee" stroke="#d32f2f" stroke-width="2" rx="5"/>
+  <text x="160" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d32f2f">血红素合成</text>
+  
+  <circle cx="120" cy="340" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="120" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">HemA</text>
+  
+  <circle cx="160" cy="340" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="160" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">HemB</text>
+  
+  <circle cx="200" cy="340" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="200" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">HemC</text>
+  
+  <circle cx="160" cy="380" r="15" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="160" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c">Heme</text>
+  
+  <!-- 辅酶A合成 -->
+  <rect x="350" y="290" width="120" height="30" fill="#e0f2f1" stroke="#00695c" stroke-width="2" rx="5"/>
+  <text x="410" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00695c">辅酶A合成</text>
+  
+  <circle cx="370" cy="340" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="370" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">CoaA</text>
+  
+  <circle cx="410" cy="340" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="410" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">CoaD</text>
+  
+  <circle cx="450" cy="340" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="450" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#f57c00">CoaE</text>
+  
+  <circle cx="410" cy="380" r="15" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="410" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#388e3c">CoA</text>
+  
+  <!-- 连接箭头 -->
+  <line x1="70" y1="135" x2="70" y2="145" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="70" y1="175" x2="70" y2="185" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="70" y1="215" x2="70" y2="225" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="170" y1="135" x2="170" y2="145" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="170" y1="175" x2="170" y2="185" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="170" y1="215" x2="170" y2="225" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="270" y1="135" x2="270" y2="145" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="270" y1="175" x2="270" y2="185" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="270" y1="215" x2="270" y2="225" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="350" y1="135" x2="350" y2="145" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="390" y1="135" x2="390" y2="145" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="370" y1="175" x2="370" y2="185" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="370" y1="215" x2="370" y2="225" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="465" y1="135" x2="465" y2="145" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="465" y1="175" x2="465" y2="185" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="555" y1="135" x2="555" y2="145" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="555" y1="175" x2="555" y2="185" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="120" y1="325" x2="120" y2="325" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="135" y1="340" x2="145" y2="340" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="175" y1="340" x2="185" y2="340" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="160" y1="355" x2="160" y2="365" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="385" y1="340" x2="395" y2="340" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="425" y1="340" x2="435" y2="340" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="410" y1="355" x2="410" y2="365" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 图例 -->
+  <rect x="20" y="410" width="610" height="30" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="30" y="425" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#212529">图例:</text>
+  
+  <circle cx="80" cy="425" r="8" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="95" y="430" font-family="Arial, sans-serif" font-size="10" fill="#212529">合成酶</text>
+  
+  <circle cx="150" cy="425" r="8" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+  <text x="165" y="430" font-family="Arial, sans-serif" font-size="10" fill="#212529">最终产物</text>
+  
+  <text x="230" y="430" font-family="Arial, sans-serif" font-size="10" fill="#212529">TPP:硫胺素焦磷酸 FAD:黄素腺嘌呤二核苷酸 PLP:磷酸吡哆醛 THF:四氢叶酸</text>
+</svg>

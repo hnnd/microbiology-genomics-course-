@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #1f2937; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #374151; }
+      .small-label { font-family: Arial, sans-serif; font-size: 12px; fill: #374151; }
+      .contig { fill: #3b82f6; stroke: #1e40af; stroke-width: 2; }
+      .highlight { fill: #fbbf24; stroke: #f59e0b; stroke-width: 2; }
+      .arrow { fill: #374151; }
+      .line { stroke: #9ca3af; stroke-width: 1; stroke-dasharray: 5,5; }
+    </style>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="400" y="30" text-anchor="middle" class="title">N50统计量计算示例</text>
+  
+  <!-- 示例说明 -->
+  <text x="50" y="70" class="label">示例：基因组大小 5 Mb，包含以下contigs：</text>
+  
+  <!-- Contig列表 -->
+  <text x="50" y="100" class="small-label">Contig 1: 2.0 Mb</text>
+  <rect x="200" y="85" width="200" height="20" class="contig" rx="3"/>
+  
+  <text x="50" y="130" class="small-label">Contig 2: 1.5 Mb</text>
+  <rect x="200" y="115" width="150" height="20" class="contig" rx="3"/>
+  
+  <text x="50" y="160" class="small-label">Contig 3: 1.0 Mb</text>
+  <rect x="200" y="145" width="100" height="20" class="contig" rx="3"/>
+  
+  <text x="50" y="190" class="small-label">Contig 4: 0.3 Mb</text>
+  <rect x="200" y="175" width="30" height="20" class="contig" rx="3"/>
+  
+  <text x="50" y="220" class="small-label">Contig 5: 0.2 Mb</text>
+  <rect x="200" y="205" width="20" height="20" class="contig" rx="3"/>
+  
+  <!-- 累计长度计算 -->
+  <text x="450" y="100" class="small-label">累计长度：2.0 Mb</text>
+  <text x="450" y="130" class="small-label">累计长度：3.5 Mb</text>
+  <text x="450" y="160" class="small-label">累计长度：4.5 Mb</text>
+  <text x="450" y="190" class="small-label">累计长度：4.8 Mb</text>
+  <text x="450" y="220" class="small-label">累计长度：5.0 Mb</text>
+  
+  <!-- 50%基因组大小线 -->
+  <line x1="50" y1="280" x2="750" y2="280" class="line"/>
+  <text x="400" y="275" text-anchor="middle" class="label">50%基因组大小 = 2.5 Mb</text>
+  
+  <!-- N50计算说明 -->
+  <text x="50" y="320" class="label">N50计算过程：</text>
+  <text x="50" y="345" class="small-label">1. 将所有contigs按长度从大到小排序</text>
+  <text x="50" y="365" class="small-label">2. 累计计算contig长度</text>
+  <text x="50" y="385" class="small-label">3. 找到累计长度≥50%基因组大小的第一个contig</text>
+  <text x="50" y="405" class="small-label">4. 该contig的长度即为N50值</text>
+  
+  <!-- N50结果高亮 -->
+  <rect x="200" y="115" width="150" height="20" class="highlight" rx="3"/>
+  <text x="450" y="130" class="label" style="fill: #f59e0b; font-weight: bold;">← N50 = 1.5 Mb</text>
+  
+  <!-- 箭头指向 -->
+  <polygon points="430,130 440,125 440,135" style="fill: #f59e0b;"/>
+  
+  <!-- 其他指标说明 -->
+  <text x="450" y="320" class="label">相关指标：</text>
+  <text x="450" y="345" class="small-label">• L50: 达到N50需要的contig数量 = 2</text>
+  <text x="450" y="365" class="small-label">• N90: 90%基因组大小对应的contig长度</text>
+  <text x="450" y="385" class="small-label">• 最大contig: 2.0 Mb</text>
+  <text x="450" y="405" class="small-label">• 总contig数: 5</text>
+  
+  <!-- 意义说明 -->
+  <text x="50" y="450" class="label">N50意义：数值越大，表示组装连续性越好</text>
+</svg>
